@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonitorConcorsi — Report 25/10/2026</title>
+    <style>
+        /* Palette di stepservizi.net/new */
+        :root { --fg: 11 12 14; --bg: 240 242 245; --surface: 255 255 255; --primary: 1 53 101;
+                 --primary-600: 2 105 202; --muted: 82 102 122; --danger: oklch(.586 .253 17.585);
+                 --success: oklch(.596 .145 163.225); color-scheme: light; }
+        @media (prefers-color-scheme: dark) {
+            :root { --fg: 204 204 204; --bg: 14 21 37; --surface: 20 29 50; --primary: 138 206 255;
+                     --primary-600: 51 170 255; --muted: 109 134 197; --danger: oklch(.712 .194 13.428);
+                     --success: oklch(.765 .177 163.223); color-scheme: dark; }
+        }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                max-width: 64rem; margin: 0 auto; padding: 2rem 1rem; background: rgb(var(--bg)); color: rgb(var(--fg)); line-height: 1.5; }
+        h1, h2 { font-weight: 700; background: linear-gradient(to right, rgb(var(--primary)), rgb(var(--primary-600)));
+                  -webkit-background-clip: text; background-clip: text; color: transparent; }
+        h1 { font-size: 2rem; margin: 0 0 .25rem; }
+        h2 { font-size: 1.35rem; margin: 2.25rem 0 .75rem; padding-bottom: .4rem; border-bottom: 3px solid rgb(var(--primary) / .25); }
+        .bando { background: rgb(var(--surface) / .8); border: 1px solid rgb(var(--fg) / .1); border-left: 3px solid rgb(var(--primary) / .5);
+                  border-radius: .75rem; padding: .85rem 1rem; margin: .6rem 0; }
+        .bando strong { color: rgb(var(--primary)); }
+        .bando.urgente { border-left-color: var(--danger); }
+        .bando.alto { border-left-color: rgb(var(--primary-600)); }
+        .punteggio { display: inline-block; background: rgb(var(--primary)); color: rgb(var(--bg)); padding: .05rem .55rem;
+                      border-radius: 9999px; font-size: .75rem; font-weight: 600; margin-left: .35rem; }
+        .fonte { font-size: .75rem; color: rgb(var(--muted)); }
+        .meta { color: rgb(var(--muted)); font-size: .875rem; }
+        a { color: rgb(var(--primary-600)); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .75rem; margin-top: 1.25rem; }
+        .stat { background: rgb(var(--surface) / .8); border: 1px solid rgb(var(--fg) / .1); border-radius: .75rem; padding: .85rem 1rem; font-size: .875rem; color: rgb(var(--muted)); }
+        .stat strong { display: block; font-size: 1.75rem; color: rgb(var(--primary)); }
+        .tabella { overflow-x: auto; border: 1px solid rgb(var(--fg) / .1); border-radius: .75rem; background: rgb(var(--surface) / .8); }
+        table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+        th { text-align: left; padding: .55rem .75rem; color: rgb(var(--muted)); font-size: .75rem; text-transform: uppercase; letter-spacing: .05em;
+              border-bottom: 1px solid rgb(var(--fg) / .1); }
+        td { padding: .55rem .75rem; border-bottom: 1px solid rgb(var(--fg) / .06); }
+        .ok { color: var(--success); font-weight: 600; }
+        .errore-fonte { color: var(--danger); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <h1>MonitorConcorsi — Report del 25/10/2026</h1>
+    <p class="meta">Generato il 00:23 | 153 bandi attivi nel database</p>
+    
+    <div class="stats">
+        <div class="stat"><strong>54</strong>Nuovi oggi</div>
+        <div class="stat"><strong>16</strong>In scadenza (7gg)</div>
+        <div class="stat"><strong>15</strong>Compatibili</div>
+        <div class="stat"><strong>0</strong>Fonti con errore</div>
+    </div>
+
+    <h2>In scadenza nei prossimi 7 giorni (16)</h2>
+        <div class="bando urgente">
+            <strong>ART. 16, L. 56/87 – ARNAS G. BROTZU - APPROVAZIONE AVVISO PUBBLICO DI AVVIAMENTO A SELEZIONE PER L’ASSUNZIONE A TEMPO INDETERMINATO E PIENO DI N. 8 UNITÀ CON QUALIFICHE VARIE</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                ASPAL - Agenzia Regionale per il Lavoro |
+                Scadenza: 25/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: aspal_art16</span><br>
+            <a href="https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&amp;v=9&amp;c=93504&amp;c1=4920&amp;id=117454&amp;tipoconc=2" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>COMUNE DI MANDAS - AVVISO PUBBLICO DI SELEZIONE PER IL CONFERIMENTO DI UN INCARICO PRESSO L’UFFICIO DI STAFF DEL SINDACO, AI SENSI DELL’ART. 90 DEL D.LGS. 18 AGOSTO 2000, N. 267, MEDIANTE ASSUNZIONE CON CONTRATTO DI LAVORO SUBORDINATO A TEMPO PIENO E DETERMINATO, CON INQUADRAMENTO NELL’AREA DEGLI ISTRUTTORI DEL COMPARTO FUNZIONI LOCALI</strong>
+            <span class="punteggio">67/100</span><br>
+            <span class="meta">
+                Comune di Mandas |
+                Scadenza: 26/10/2026 |
+                Sede: Sardegna, Sud Sardegna
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=2dc8e95291df4ca794faa5e4aa4362a0" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Bando di selezione pubblica per soli titoli per il reclutamento di n. 1 figura di tutor didattico ed amministrativo per studenti con disabilità, DSA e BES dell’Accademia di Belle Arti “Mario Sironi” di Sassari</strong>
+            <span class="punteggio">66/100</span><br>
+            <span class="meta">
+                Accademia di Belle Arti Mario Sironi |
+                Scadenza: 26/10/2026 |
+                Sede: Sardegna, Sassari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=0253879d53474bb5bbb5c0ef3e509d01" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Selezione: n. 1 figura di tutor didattico ed amministrativo per studenti con disabilità, DSA e BES…</strong>
+            <span class="punteggio">56/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 26/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/0253879d53474bb5bbb5c0ef3e509d01.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Selezione: un incarico presso l’ufficio di staff del sindaco, ai sensi dell’art. 90 del d.lgs. 18 agosto 2000…</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 26/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/2dc8e95291df4ca794faa5e4aa4362a0.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>APPROVAZIONE SCHEMA AVVISO PROCEDURA DI INTERPELLO A SEGUITO DI ACCORDO PER LA GESTIONE ASSOCIATA DELLA FORMAZIONE DI ELENCHI DI IDONEI PER LE ASSUNZIONI DI PERSONALE DI CUI ALL’ARTICOLO 3 BIS DEL D.L. N. 80/2021 – N.1 FUNZIONARIO TECNICO (AREA DEI FUNZIONARI E DELL’ELEVATA QUALIFICAZIONE) EX PROFILO DI ISTRUTTORE DIRETTIVO TECNICO CAT.D1</strong>
+            <span class="punteggio">48/100</span><br>
+            <span class="meta">
+                Comune di Palau |
+                Scadenza: 27/10/2026 |
+                Sede: Sardegna, Sassari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=200a36366c304a559a737107ed936141" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Approvazione schema avviso procedura di interpello a seguito di accordo per la gestione associata…</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 27/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/200a36366c304a559a737107ed936141.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Concorso: 4 posti a tempo pieno e indeterminato Istruttore Agente di Polizia Locale -Area degli Istruttori…</strong>
+            <span class="punteggio">52/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 28/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/cab3d535ab6043909b3ea56ab62d73cf.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Comune di Siniscola, 4 posti di poliziotto municipale</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 28/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: concorsipubblici</span><br>
+            <a href="https://www.concorsipubblici.com/comune-di-siniscola-concorso-poliziotto-municipale-agente-polizia-locale-agente-di-polizia" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>AVVISO PUBBLICO DI SELEZIONE PER IL CONFERIMENTO DI UN INCARICO EX ART. 90 TUEL CON CONTRATTO A TEMPO PARZIALE E DETERMINATO DA INQUADRARE NELL’AREA DEGLI ISTRUTTORI - PROFILO PROFESSIONALE ISTRUTTORE AMMINISTRATIVO CONTABILE – UFFICIO DI STAFF</strong>
+            <span class="punteggio">74/100</span><br>
+            <span class="meta">
+                Comune di Elmas |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna, Cagliari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=463ee28680644aa0a013ed128a25cb35" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Concorso pubblico per esami, copertura di 4 posti a tempo pieno e indeterminato Istruttore Agente di Polizia Locale -Area degli Istruttori-, con riserva prioritariadi n. 3 posti ai volontari delle FF.AA. (artt. 1014, c. 3 e 4 e 678, c. 9, D.lgs. 66/2010) e di n. 1 posto agli operatori volontari (ex art. 18, c. 4, D.Lgs. 40/2017) Area Vigilanza</strong>
+            <span class="punteggio">52/100</span><br>
+            <span class="meta">
+                Comune di Siniscola |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna, Nuoro
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=cab3d535ab6043909b3ea56ab62d73cf" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Concorso pubblico per esami per la copertura di un posto di operatore esperto conduttore mezzi pesanti</strong>
+            <span class="punteggio">52/100</span><br>
+            <span class="meta">
+                Comune di Orroli |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=041f1b85606641e5abd2f0debc8762e8" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>ART. 16, L. 56/87 – CONSORZIO DI BONIFICA DELLA SARDEGNA MERIDIONALE - APPROVAZIONE AVVISO PUBBLICO DI AVVIAMENTO A SELEZIONE PER L’ASSUNZIONE A TEMPO DETERMINATO - PER 106 GIORNATE DI N. 1 UNITÀ CON LA QUALIFICA DI CONDUTTORI DI MACCHINARI PER IL MOVIMENTO TERRA.</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                ASPAL - Agenzia Regionale per il Lavoro |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: aspal_art16</span><br>
+            <a href="https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&amp;v=9&amp;c=93504&amp;c1=4920&amp;id=117929&amp;tipoconc=2" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Concorso: un posto di operatore esperto conduttore mezzi pesanti</strong>
+            <span class="punteggio">52/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/041f1b85606641e5abd2f0debc8762e8.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>Selezione: un incarico ex art. 90 tuel con contratto a tempo parziale e determinato da inquadrare nell’area…</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/463ee28680644aa0a013ed128a25cb35.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando urgente">
+            <strong>ART. 16, L. 56/87 – CONSORZIO DI BONIFICA SARDEGNA MERIDIONALE - APPROVAZIONE AVVISO PUBBLICO DI AVVIAMENTO A SELEZIONE PER L’ASSUNZIONE A TEMPO DETERMINATO - PER 158 GIORNATE DI N. 1 UNITÀ CON LA QUALIFICA DI OPERAIO SPECIALIZZATO CONDUTTORI DI MACCHINARI PER IL MOVIMENTO TERRA</strong>
+            <span class="punteggio">41/100</span><br>
+            <span class="meta">
+                ASPAL - Agenzia Regionale per il Lavoro |
+                Scadenza: 31/10/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: aspal_art16</span><br>
+            <a href="https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&amp;v=9&amp;c=93504&amp;c1=4920&amp;id=117821&amp;tipoconc=2" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+    <h2>Nuovi dall'ultima scansione (20)</h2>
+        <div class="bando alto">
+            <strong>BANDO DI CONCORSO PUBBLICO PER ESAMI PER LA COPERTURA A TEMPO INDETERMINATO E PIENO DI N. 1 POSTO PER IL PROFILO PROFESSIONALE DI ISTRUTTORE AMMINISTRATIVO – AREA ISTRUTTORI.</strong>
+            <span class="punteggio">84/100</span><br>
+            <span class="meta">
+                Comune di Stintino |
+                Scadenza: 04/11/2026 |
+                Sede: Sardegna, Sassari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=539abe8122844004a1eddf23e623e2d9" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Pubblico Concorso, per titoli ed esami, per l&#x27;assunzione, a tempo pieno, 36 ore settimanali, e indeterminato, di n. 1 Istruttore Amministrativo Contabile, Area degli Istruttori, ex Categoria C, Posizione Economica C1, da assegnare al Servizio Economico Finanziario, riservato prioritariamente ai Volontari delle Forze Armate.</strong>
+            <span class="punteggio">81/100</span><br>
+            <span class="meta">
+                Comune di Barisardo |
+                Scadenza: 03/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=c761e3d6432e4e83ac3c2186f3c7da44" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Concorso: n. 1 Istruttore Amministrativo Contabile, Area degli Istruttori, ex Categoria C, Posizione Economica…</strong>
+            <span class="punteggio">81/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 03/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/c761e3d6432e4e83ac3c2186f3c7da44.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>AVVISO PUBBLICO DI SELEZIONE PER IL CONFERIMENTO DI UN INCARICO EX ART. 90 TUEL CON CONTRATTO A TEMPO PARZIALE E DETERMINATO DA INQUADRARE NELL’AREA DEGLI ISTRUTTORI - PROFILO PROFESSIONALE ISTRUTTORE AMMINISTRATIVO CONTABILE – UFFICIO DI STAFF</strong>
+            <span class="punteggio">74/100</span><br>
+            <span class="meta">
+                Comune di Elmas |
+                Scadenza: 30/10/2026 |
+                Sede: Sardegna, Cagliari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=463ee28680644aa0a013ed128a25cb35" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Concorso: n. 1 posto per il profilo professionale di istruttore amministrativo – area istruttori.</strong>
+            <span class="punteggio">74/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 04/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/539abe8122844004a1eddf23e623e2d9.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>ART. 16, L. 56/87 – ASVI SARDEGNA - APPROVAZIONE AVVISO PUBBLICO DI AVVIAMENTO A SELEZIONE PER L’ASSUNZIONE A TEMPO INDETERMINATO - TEMPO PIENO DI N. 3 UNITÀ CON LA QUALIFICA DI ASSISTENTE AMMINISTRATIVO CAT. B – ADDETTI AGLI AFFARI GENERALI</strong>
+            <span class="punteggio">74/100</span><br>
+            <span class="meta">
+                ASPAL - Agenzia Regionale per il Lavoro |
+                Scadenza: 06/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: aspal_art16</span><br>
+            <a href="https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&amp;v=9&amp;c=93504&amp;c1=4920&amp;id=116457&amp;tipoconc=2" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>N. 1 posto di istruttore informatico – area degli istruttori – a tempo pieno e indeterminato da assegnare…</strong>
+            <span class="punteggio">74/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 20/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/4e346756d62741308142fa617a2da3aa.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Concorso pubblico per soli esami per l’assunzione di n. 2 Istruttori Amministrativo- Contabili, Area degli Istruttori, a tempo pieno e indeterminato con riserva di n. 1 posto agli operatori volontari</strong>
+            <span class="punteggio">69/100</span><br>
+            <span class="meta">
+                Comune di Monserrato |
+                Scadenza: N/D |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: comune_sassari_regionali</span><br>
+            <a href="https://monserrato.etrasparenza.it/archivio22_bandi-di-concorso_0_25790_640_1.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Procedura interpello a seguito di accordo per la gestione associata della formazione di elenchi di idonei Asmel per le assunzioni di personale di cui all’art. 3 bis del D.Lgs. 81/2021 per assunzione di un istruttore amministrativo (area degli istruttori ex cat. C) a tempo pieno e inderminato</strong>
+            <span class="punteggio">69/100</span><br>
+            <span class="meta">
+                Comune di Perdaxius |
+                Scadenza: N/D |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: comune_sassari_regionali</span><br>
+            <a href="https://servizi.comune.perdaxius.su.it/mc/mc_p_dettaglio.php?id_pubbl=20889" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>CONCORSO PER ESAMI PER N. 4 UNITÀ DI ISTRUTTORE TECNICO, CATEGORIA C, A TEMPO PIENO E INDETERMINATO - CCRL REGIONE SARDEGNA.</strong>
+            <span class="punteggio">69/100</span><br>
+            <span class="meta">
+                Agenzia Regionale per la Protezione dell&#x27;Ambiente della Sardegna |
+                Scadenza: 21/11/2026 |
+                Sede: Sardegna, Oristano, Sud Sardegna, Nuoro, Cagliari, Sassari
+            </span><br>
+            <span class="fonte">Fonti: inpa, ossian</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=a4eca1c484f44388b190cbba5c5a362c" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>COMUNE DI MANDAS - AVVISO PUBBLICO DI SELEZIONE PER IL CONFERIMENTO DI UN INCARICO PRESSO L’UFFICIO DI STAFF DEL SINDACO, AI SENSI DELL’ART. 90 DEL D.LGS. 18 AGOSTO 2000, N. 267, MEDIANTE ASSUNZIONE CON CONTRATTO DI LAVORO SUBORDINATO A TEMPO PIENO E DETERMINATO, CON INQUADRAMENTO NELL’AREA DEGLI ISTRUTTORI DEL COMPARTO FUNZIONI LOCALI</strong>
+            <span class="punteggio">67/100</span><br>
+            <span class="meta">
+                Comune di Mandas |
+                Scadenza: 26/10/2026 |
+                Sede: Sardegna, Sud Sardegna
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=2dc8e95291df4ca794faa5e4aa4362a0" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Bando di selezione pubblica per soli titoli per il reclutamento di n. 1 figura di tutor didattico ed amministrativo per studenti con disabilità, DSA e BES dell’Accademia di Belle Arti “Mario Sironi” di Sassari</strong>
+            <span class="punteggio">66/100</span><br>
+            <span class="meta">
+                Accademia di Belle Arti Mario Sironi |
+                Scadenza: 26/10/2026 |
+                Sede: Sardegna, Sassari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=0253879d53474bb5bbb5c0ef3e509d01" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>AVVISO INFORMATIVO Avviamento numerico a selezione ex legge n. 68/1999 – Programmazione assunzioni CREA – anno 2026</strong>
+            <span class="punteggio">64/100</span><br>
+            <span class="meta">
+                Consiglio per la ricerca in agricoltura e l&#x27;analisi dell&#x27;economia agraria |
+                Scadenza: 31/12/2026 |
+                Sede: Nazionale (7 regioni)
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=cb06e02c72184265a03a8169c134e076" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>AVVISO PUBBLICO DI SELEZIONE DI PERSONALE, PER TITOLI E COLLOQUIO, PER L’ASSUNZIONE DI NR. 1 ADDETTO AI SERVIZI DI SEGRETERIA, TIROCINIO UNIVERSITARIO E BIBLIOTECA A TEMPO PARZIALE E INDETERMINATO AI SENSI DEL CCNL COMMERCIO E SERVIZI (CONFCOMMERCIO).</strong>
+            <span class="punteggio">63/100</span><br>
+            <span class="meta">
+                Consorzio Ausi - Consorzio per La Promozione Delle Attivita&#x27; Universitarie del Sulcis-iglesiente |
+                Scadenza: 02/11/2026 |
+                Sede: Sardegna, Sud Sardegna
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=0ab64ad5dbb647f099b05da3d754b714" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando alto">
+            <strong>Selezione: personale, per titoli e colloquio, per l’assunzione di nr. 1 addetto… (ai servizi di segreteria)</strong>
+            <span class="punteggio">63/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 02/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/0ab64ad5dbb647f099b05da3d754b714.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando ">
+            <strong>Comune di Terralba - CONCORSO PUBBLICO, CON TEST AMMISSIONE E PROVA PRATICA, PER LA COPERTURA PART-TIME A 24 ORE SETTIMANALI E INDETERMINATO DI N. 1 POSTO DI OPERATORE ESPERTO – OPERAIO MURATORE SPECIALIZZATO (DA ADIBIRE PREVALENTEMENTE AI SERVIZI CIMITERIALI)</strong>
+            <span class="punteggio">59/100</span><br>
+            <span class="meta">
+                Comune di Terralba |
+                Scadenza: 09/11/2026 |
+                Sede: Sardegna, Oristano
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=e22b7e8376864e90ba46e8ea60adb93b" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando ">
+            <strong>Concorso pubblico per esami per la copertura a tempo pieno e indeterminato di n. 4 istruttori tecnici, area degli istruttori, CCNL funzioni locali 2022/2024, con riserva di due posti a favore delle forze armate ai sensi del D. Lgs. n. 66/2010 .</strong>
+            <span class="punteggio">59/100</span><br>
+            <span class="meta">
+                Citta&#x27; Metropolitana di Cagliari |
+                Scadenza: 09/11/2026 |
+                Sede: Sardegna, Cagliari
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=93e9a6ef7d7e45468bceaf75d775e63a" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando ">
+            <strong>Concorso: n. 4 istruttori tecnici, area degli istruttori, CCNL funzioni locali 2022/2024, con riserva di due…</strong>
+            <span class="punteggio">59/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 09/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/93e9a6ef7d7e45468bceaf75d775e63a.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando ">
+            <strong>Bando di Concorso Pubblico per soli esami, per la copertura a tempo parziale (50%) e indeterminato di n.1 Istruttore Tecnico – Area degli Istruttori – CCNL Funzioni Locali da destinare all’Area Tecnica</strong>
+            <span class="punteggio">59/100</span><br>
+            <span class="meta">
+                Comune di Musei |
+                Scadenza: 12/11/2026 |
+                Sede: Sardegna, Sud Sardegna
+            </span><br>
+            <span class="fonte">Fonti: inpa</span><br>
+            <a href="https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=5efd48e6e0684a7495c3f801bf7f5197" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+        <div class="bando ">
+            <strong>Concorso a tempo parziale: n.1 Istruttore Tecnico – Area degli Istruttori – CCNL Funzioni Locali…</strong>
+            <span class="punteggio">59/100</span><br>
+            <span class="meta">
+                Ente della Sardegna |
+                Scadenza: 12/11/2026 |
+                Sede: Sardegna
+            </span><br>
+            <span class="fonte">Fonti: ossian</span><br>
+            <a href="https://ossian.cloud/concorsi/concorso/5efd48e6e0684a7495c3f801bf7f5197.html" target="_blank" rel="noopener">Apri bando ufficiale</a>
+        </div>
+    
+    
+    <h2>Registro delle scansioni</h2>
+    <div class="tabella"><table>
+        <tr><th>Fonte</th><th>Esito</th><th>Bandi trovati</th><th>Nuovi</th><th>Data/Ora</th></tr>
+        
+        <tr>
+            <td><strong>concorsipubblici</strong></td>
+            <td class="ok">ok</td>
+            <td>7</td>
+            <td>6</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>ossian</strong></td>
+            <td class="ok">ok</td>
+            <td>61</td>
+            <td>49</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>mit_attivi</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>agenzia_entrate_ns</strong></td>
+            <td class="ok">ok</td>
+            <td>6</td>
+            <td>2</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>ader_aperte</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>abbanoa_aperte</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>areus</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>ares_sardegna</strong></td>
+            <td class="ok">ok</td>
+            <td>4</td>
+            <td>3</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>aspal_avvisi</strong></td>
+            <td class="ok">ok</td>
+            <td>1</td>
+            <td>1</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>aspal_art16</strong></td>
+            <td class="ok">ok</td>
+            <td>8</td>
+            <td>8</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>atp_sassari</strong></td>
+            <td class="ok">ok</td>
+            <td>2</td>
+            <td>1</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>aou_sassari</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>uniss_pta</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>citta_metropolitana_ss</strong></td>
+            <td class="ok">ok</td>
+            <td>5</td>
+            <td>1</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>comune_sassari_regionali</strong></td>
+            <td class="ok">ok</td>
+            <td>13</td>
+            <td>12</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>gazzetta_ufficiale</strong></td>
+            <td class="ok">ok</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>inpa</strong></td>
+            <td class="ok">ok</td>
+            <td>75</td>
+            <td>0</td>
+            <td class="meta">2026-10-25 00:23</td>
+        </tr>
+        <tr>
+            <td><strong>aou_sassari</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:58</td>
+        </tr>
+        <tr>
+            <td><strong>gazzetta_ufficiale</strong></td>
+            <td class="ok">ok</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:58</td>
+        </tr>
+        <tr>
+            <td><strong>inpa</strong></td>
+            <td class="ok">ok</td>
+            <td>77</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:58</td>
+        </tr>
+        <tr>
+            <td><strong>aou_sassari</strong></td>
+            <td class="errore-fonte">vuoto</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:53</td>
+        </tr>
+        <tr>
+            <td><strong>gazzetta_ufficiale</strong></td>
+            <td class="ok">ok</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:53</td>
+        </tr>
+        <tr>
+            <td><strong>inpa</strong></td>
+            <td class="ok">ok</td>
+            <td>77</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:53</td>
+        </tr>
+        <tr>
+            <td><strong>aou_sassari</strong></td>
+            <td class="errore-fonte">bloccato</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="meta">2026-10-24 23:50</td>
+        </tr>
+        <tr>
+            <td><strong>gazzetta_ufficiale</strong></td>
+            <td class="ok">ok</td>
+            <td>1</td>
+            <td>1</td>
+            <td class="meta">2026-10-24 23:50</td>
+        </tr>
+        <tr>
+            <td><strong>inpa</strong></td>
+            <td class="ok">ok</td>
+            <td>77</td>
+            <td>70</td>
+            <td class="meta">2026-10-24 23:50</td>
+        </tr>
+    </table></div>
+    
+    <p class="meta" style="margin-top: 40px; text-align: center;">
+        MonitorConcorsi — Progetto personale, uso non commerciale
+    </p>
+</body>
+</html>

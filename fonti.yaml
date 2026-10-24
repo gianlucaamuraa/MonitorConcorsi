@@ -1,0 +1,190 @@
+# ============================================================
+# MonitorConcorsi — Fonti da scansionare
+# ============================================================
+#
+# Campi comuni:
+#   nome       identificativo unico (minuscolo, senza spazi)
+#   tipo       inpa | gazzetta | html | rss
+#   attivo     true/false (default true)
+#   ufficiale  true = sito dell'ente/istituzione, false = aggregatore (default true)
+#
+# Tipo "html" (pagina di un ente con l'elenco dei bandi):
+#   url        indirizzo della pagina
+#   ente       nome dell'ente da mostrare
+#   sede       sede di lavoro (es. "Sassari")
+#   selettore  (opzionale) selettore CSS della zona con l'elenco, es. "main"
+#   blocco     (opzionale) selettore CSS di un riquadro che contiene un solo bando
+#   ente_dal_contesto (opzionale, con blocco) legge l'ente dal testo sopra il riquadro
+#   filtro     (opzionale) regex: il testo del link deve contenerla
+#   escludi    (opzionale) regex: testi dei link da ignorare
+#   escludi_link (opzionale) regex: indirizzi dei link da ignorare
+#
+# Tipo "rss": url del feed, più ente/sede come sopra.
+#
+# Per provare una sola fonte:   python main.py scan --fonte nome_fonte
+#
+# Tutte le fonti qui sotto sono state verificate il 25/10/2026: pagina
+# raggiungibile, robots.txt che ne permette la lettura, contenuto sui concorsi.
+# Una fonte senza bandi aperti in quel momento è normale (esito "vuoto").
+# ============================================================
+
+fonti:
+  # --- Fonti principali (con API/feed strutturati) ---------------------------
+
+  # Portale InPA: dal 2023 tutte le PA vi pubblicano i concorsi.
+  # Tiene i bandi in Sardegna (equivale al filtro regioneId=14 del sito) e quelli
+  # nazionali (sedi in 5+ regioni). La pagina inpa.gov.it/bandi-e-avvisi carica
+  # i dati con JavaScript: per questo si usa l'API che c'è dietro.
+  - nome: inpa
+    tipo: inpa
+    includi_nazionali: true
+    dettagli: true          # scarica i requisiti dei bandi nuovi (più lento, più preciso)
+
+  # Gazzetta Ufficiale 4ª Serie Speciale (esce martedì e venerdì).
+  # La pagina "30giorni/concorsi" contiene solo PDF: il feed RSS ha gli stessi atti.
+  - nome: gazzetta_ufficiale
+    tipo: gazzetta
+    includi_nazionali: true
+
+  # --- Raccolte di bandi sardi -----------------------------------------------
+
+  # Raccolta del Comune di Sassari: decine di bandi di comuni ed enti sardi,
+  # ognuno in un riquadro con pubblicazione e scadenza.
+  - nome: comune_sassari_regionali
+    tipo: html
+    url: "https://www.comune.sassari.it/it/servizi/educazione-e-formazione/raccolta-concorsi-regionali/"
+    ente: "Ente della Sardegna"
+    sede: "Sardegna"
+    blocco: "div.mb-5"
+    ente_dal_contesto: true     # il nome dell'ente è scritto sopra ogni riquadro
+
+  # --- Enti di Sassari ----------------------------------------------------------
+
+  - nome: citta_metropolitana_ss
+    tipo: html
+    url: "https://www.cittametropolitana.ss.it/it/argomenti/concorsi"
+    ente: "Città Metropolitana di Sassari"
+    sede: "Sassari"
+
+  - nome: uniss_pta
+    tipo: html
+    url: "https://www.uniss.it/it/bandi-pta"
+    ente: "Università di Sassari"
+    sede: "Sassari"
+
+  - nome: aou_sassari
+    tipo: html
+    url: "https://www.aousassari.it/amministrazione-trasparente/bandi-di-concorso/bandi-di-concorso-e-selezione/"
+    ente: "AOU Sassari"
+    sede: "Sassari"
+    escludi_link: "old\\.aousassari\\.it"   # bandi chiusi rimasti dal vecchio sito
+
+  - nome: atp_sassari
+    tipo: html
+    url: "https://atpsassari.portaletrasparenza.net/it/trasparenza/selezione-del-personale/reclutamento-del-personale/bandi-e-avvisi-di-selezione-per-i-quali-e-possibile-presentare-domanda-di-partecipazione.html"
+    ente: "ATP Sassari"
+    sede: "Sassari"
+    selettore: "ul.menu-level-4.show"     # elenco dei bandi aperti nel menu della pagina
+    ufficiale: true
+
+  # --- Enti regionali -------------------------------------------------------------
+
+  # Selezioni tramite Centri per l'impiego per altre PA (art. 16 L. 56/1987)
+  - nome: aspal_art16
+    tipo: html
+    url: "https://agenziaregionaleperillavoro.regione.sardegna.it/index.php?c=93504&c1=4920&nodesc=2&s=44&tipoconc=2&tipodoc=2&v=9&xsl=2362"
+    ente: "ASPAL - Agenzia Regionale per il Lavoro"
+    sede: "Sardegna"
+
+  - nome: aspal_avvisi
+    tipo: html
+    url: "https://www.aspalsardegna.it/tipi_notizia/avvisi-pubblici/"
+    ente: "ASPAL"
+    sede: "Sardegna"
+
+  - nome: ares_sardegna
+    tipo: html
+    url: "https://www.aressardegna.it/albo-pretorio/bandi-di-concorso-e-selezione/"
+    ente: "ARES Sardegna"
+    sede: "Sardegna"
+
+  - nome: areus
+    tipo: html
+    url: "https://www.areus.sardegna.it/albo-pretorio/bandi-di-concorso-e-selezione/"
+    ente: "AREUS Sardegna"
+    sede: "Sardegna"
+
+  - nome: abbanoa_aperte
+    tipo: html
+    url: "https://www.abbanoa.it/Societa-Trasparente/Selezione-del-Personale/Reclutamento-del-Personale/Selezioni-Aperte"
+    ente: "Abbanoa"
+    sede: "Sardegna"
+
+  # --- Enti nazionali -------------------------------------------------------------
+
+  - nome: ader_aperte
+    tipo: html
+    url: "https://www.agenziaentrateriscossione.gov.it/it/il-gruppo/amministrazionetrasparente/selezionepersonale/selezioni-aperte/"
+    ente: "Agenzia delle entrate-Riscossione"
+    sede: "Nazionale"
+
+  - nome: agenzia_entrate_ns
+    tipo: html
+    url: "https://www.agenziaentrate.gov.it/portale/agenzia/amministrazione-trasparente/bandi-di-concorso/concorsi-non-ancora-scaduti"
+    ente: "Agenzia delle Entrate"
+    sede: "Nazionale"
+
+  - nome: mit_attivi
+    tipo: html
+    url: "https://trasparenza.mit.gov.it/pagina640_concorsi-attivi.html"
+    ente: "Ministero delle Infrastrutture e dei Trasporti"
+    sede: "Nazionale"
+
+  # --- Aggregatori (fonti secondarie: i bandi vanno sempre verificati) -----------
+
+  - nome: ossian
+    tipo: html
+    url: "https://ossian.cloud/concorsi/regione/sardegna.html"
+    ente: "Ente della Sardegna"
+    sede: "Sardegna"
+    ufficiale: false
+
+  - nome: concorsipubblici
+    tipo: html
+    url: "https://www.concorsipubblici.com/concorsi/regione/loc/sardegna"
+    ente: "Ente della Sardegna"
+    sede: "Sardegna"
+    ufficiale: false
+    escludi_link: "/concorsi/(?:archivio|tipo|regione)|/avviso$"
+
+# ============================================================
+# Fonti verificate e NON inserite (25/10/2026)
+# ============================================================
+# Non raggiungibili dal programma:
+#   ARST            403 - protezione anti-bot (Cloudflare)
+#   ASE Entrate     il server chiude la connessione ai programmi
+#   INL             403 - accesso non consentito
+#   ACI             il server non risponde (timeout)
+#   INAIL           robots.txt ne vieta la lettura automatica: va rispettato
+#   AREA Sardegna   vecchio indirizzo inesistente (404); la nuova pagina
+#                   carica l'elenco con JavaScript
+# Pagina senza elenco leggibile (caricato con JavaScript o assente):
+#   Regione Sardegna concorsi e selezioni, Comune di Sassari "Concorsi",
+#   SardegnaIT (avvisi e selezioni in corso), Ministero dell'Interno,
+#   Vigili del Fuoco concorsi online
+#   → i loro bandi sono comunque pubblicati su InPA
+# Doppioni di fonti già presenti:
+#   inPA pagina web (= fonte inpa), Gazzetta 30 giorni (= feed RSS),
+#   ASPAL concorsi e selezioni e Agenzia Regionale per il lavoro (rimandano
+#   ad aspal_art16), ASL 1 Sassari (rimanda ad ARES Sardegna),
+#   Abbanoa selezione del personale (= abbanoa_aperte, che ha solo quelle aperte),
+#   AdER selezione personale (= ader_aperte), Agenzia Entrate bandi di concorso
+#   (= agenzia_entrate_ns), MIT bandi di concorso (= mit_attivi)
+# Contengono bandi chiusi o non adatti:
+#   ASPAL art.16 "in svolgimento", Dogane "concorsi in svolgimento":
+#     domande già chiuse, prove in corso
+#   Dogane bandi di concorso: esami per patente di spedizioniere, non lavoro
+#   Vigili del Fuoco concorsi pubblici: bandi senza date, anche di anni passati
+#     (i concorsi VVF aperti sono su InPA)
+#   INPS: solo pagine informative (i concorsi INPS sono su InPA)
+#   Concorso Vinto: pagina promozionale nazionale, non un elenco di bandi

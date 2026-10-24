@@ -1,0 +1,60 @@
+# Scansione automatica ogni mattina + pubblicazione della pagina su GitHub Pages.
+# Si può avviare anche a mano: scheda "Actions" → "Scansione concorsi" → "Run workflow".
+name: Scansione concorsi
+
+on:
+  schedule:
+    - cron: "15 5 * * *"      # 05:15 UTC = 06:15 (ora solare) / 07:15 (ora legale) in Italia
+  workflow_dispatch:
+
+permissions:
+  contents: write              # per salvare i risultati nel repository
+  pages: write
+  id-token: write
+
+concurrency:
+  group: scansione
+  cancel-in-progress: false
+
+jobs:
+  scansione:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblica.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa le dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Scansiona le fonti
+        run: python main.py scan
+        env:
+          MONITOR_PUBBLICO: "1"     # nei file pubblicati non finiscono stato e note
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Salva i risultati nel repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Scansione del $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Prepara la cartella del sito
+        run: python main.py sito
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: sito
+      - id: pubblica
+        uses: actions/deploy-pages@v4

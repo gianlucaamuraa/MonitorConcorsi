@@ -1,0 +1,1149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MonitorConcorsi//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Scadenze Concorsi
+X-WR-TIMEZONE:Europe/Rome
+X-WR-CALDESC:Scadenze bandi concorsi pubblici - MonitorConcorsi
+BEGIN:VEVENT
+UID:49f82d10adbd79778bc36156da49c18e@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:SCADENZA: BANDO DI CONCORSO PUBBLICO PER ESAMI PER LA COPERTURA A 
+ TEMP
+DESCRIPTION:Ente: Comune di Stintino\nPunteggio: 84/100\nSezione: compatib
+ ile\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/
+ ?concorso_id=539abe8122844004a1eddf23e623e2d9\nNote: Titolo studio: 26/30
+  (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o are
+ a vicina) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza
+ : 15/20 (scade tra 10 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=539abe8122844004a1eddf23e623e2d9
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:705445c90943a008e7faffa1835f265d@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:SCADENZA: Pubblico Concorso\, per titoli ed esami\, per l'assunzio
+ ne\, a 
+DESCRIPTION:Ente: Comune di Barisardo\nPunteggio: 81/100\nSezione: compati
+ bile\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso
+ /?concorso_id=c761e3d6432e4e83ac3c2186f3c7da44\nNote: Titolo studio: 26/3
+ 0 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede i
+ n Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo\, co
+ ntabile)) | Scadenza: 15/20 (scade tra 9 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=c761e3d6432e4e83ac3c2186f3c7da44
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d504c970dd3db8aebd26b97235aea89b@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:SCADENZA: Concorso: n. 1 Istruttore Amministrativo Contabile\, Are
+ a deg
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 81/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/c761e3d6432e4e83ac3c
+ 2186f3c7da44.html\nNote: Titolo studio: 26/30 (profilo 'istruttore': dipl
+ oma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (
+ ambito molto pertinente (amministrativo\, contabile)) | Scadenza: 15/20 (
+ scade tra 9 giorni)
+URL:https://ossian.cloud/concorsi/concorso/c761e3d6432e4e83ac3c2186f3c7da4
+ 4.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4142027d432bbfdf94045fd343bd2624@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:SCADENZA: AVVISO PUBBLICO DI SELEZIONE PER IL CONFERIMENTO DI UN I
+ NCAR
+DESCRIPTION:Ente: Comune di Elmas\nPunteggio: 74/100\nSezione: compatibile
+ \nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?co
+ ncorso_id=463ee28680644aa0a013ed128a25cb35\nNote: Titolo studio: 26/30 (p
+ rofilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sa
+ rdegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo\, contab
+ ile)) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=463ee28680644aa0a013ed128a25cb35
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:68ff905c68e0730111a66f93f7156fcd@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:SCADENZA: Concorso: n. 1 posto per il profilo professionale di ist
+ rutt
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 74/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/539abe8122844004a1ed
+ df23e623e2d9.html\nNote: Titolo studio: 26/30 (profilo 'istruttore': dipl
+ oma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (
+ ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 10 giorn
+ i)
+URL:https://ossian.cloud/concorsi/concorso/539abe8122844004a1eddf23e623e2d
+ 9.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4523e21dd76ef4ca9563a472a6ad7157@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – ASVI SARDEGNA - APPROVAZIONE AVVI
+ SO PUBB
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 74/1
+ 00\nSezione: compatibile\nLink: https://agenziaregionaleperillavoro.regio
+ ne.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=116457&tipoconc=2\nNo
+ te: Titolo studio: 26/30 (profilo 'assistente': diploma sufficiente) | Zo
+ na: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (am
+ ministrativo)) | Scadenza: 15/20 (scade tra 12 giorni)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=116457&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:15f028f05f2228425b174270673c7c76@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:SCADENZA: N. 1 posto di istruttore informatico – area degli istr
+ uttori
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 74/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/4e346756d62741308142
+ fa617a2da3aa.html\nNote: Titolo studio: 26/30 (profilo 'istruttore': dipl
+ oma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (
+ ambito pertinente (informatico)) | Scadenza: 15/20 (scade tra 26 giorni)
+URL:https://ossian.cloud/concorsi/concorso/4e346756d62741308142fa617a2da3a
+ a.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3f3a458c9cddea0132baaeb1601ed212@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:SCADENZA: CONCORSO PER ESAMI PER N. 4 UNITÀ DI ISTRUTTORE TECNICO
+ \, CAT
+DESCRIPTION:Ente: Agenzia Regionale per la Protezione dell'Ambiente della 
+ Sardegna\nPunteggio: 69/100\nSezione: compatibile\nLink: https://www.inpa
+ .gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=a4eca1c484f443
+ 88b190cbba5c5a362c\nNote: Titolo studio: 26/30 (profilo 'istruttore': dip
+ loma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (a
+ mbito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 27 g
+ iorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=a4eca1c484f44388b190cbba5c5a362c
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:490f2ba2531c3d4d1a50450ed2531cf3@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:SCADENZA: COMUNE DI MANDAS - AVVISO PUBBLICO DI SELEZIONE PER IL C
+ ONFE
+DESCRIPTION:Ente: Comune di Mandas\nPunteggio: 67/100\nSezione: compatibil
+ e\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?c
+ oncorso_id=2dc8e95291df4ca794faa5e4aa4362a0\nNote: Titolo studio: 26/30 (
+ profilo 'area degli istruttori': diploma sufficiente) | Zona: 15/25 (altr
+ a sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) 
+ | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=2dc8e95291df4ca794faa5e4aa4362a0
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c490b0c2238292734edf307413dde402@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:SCADENZA: Bando di selezione pubblica per soli titoli per il reclu
+ tame
+DESCRIPTION:Ente: Accademia di Belle Arti Mario Sironi\nPunteggio: 66/100\
+ nSezione: da_verificare\nLink: https://www.inpa.gov.it/bandi-e-avvisi/det
+ taglio-bando-avviso/?concorso_id=0253879d53474bb5bbb5c0ef3e509d01\nNote: 
+ Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sa
+ ssari o area vicina) | Ambito: 18/25 (ambito pertinente (amministrativo))
+  | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=0253879d53474bb5bbb5c0ef3e509d01
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca0e9f76ba0769837cca94220b4c13e7@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:SCADENZA: AVVISO INFORMATIVO Avviamento numerico a selezione ex le
+ gge 
+DESCRIPTION:Ente: Consiglio per la ricerca in agricoltura e l'analisi dell
+ 'economia agraria\nPunteggio: 64/100\nSezione: compatibile\nLink: https:/
+ /www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=cb06e
+ 02c72184265a03a8169c134e076\nNote: Titolo studio: 26/30 (profilo 'operato
+ re': diploma sufficiente) | Zona: 0/25 (sede fuori Sardegna (nazionale (7
+  regioni))) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scaden
+ za: 20/20 (scade tra 67 giorni (ampio margine))
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=cb06e02c72184265a03a8169c134e076
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3663fcd57f0f34bb21146cbde90e49d4@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:SCADENZA: AVVISO PUBBLICO DI SELEZIONE DI PERSONALE\, PER TITOLI E
+  COLL
+DESCRIPTION:Ente: Consorzio Ausi - Consorzio per La Promozione Delle Attiv
+ ita' Universitarie del Sulcis-iglesiente\nPunteggio: 63/100\nSezione: da_
+ verificare\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-
+ avviso/?concorso_id=0ab64ad5dbb647f099b05da3d754b714\nNote: Titolo studio
+ : 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in S
+ ardegna) | Ambito: 18/25 (ambito pertinente (segreteria)) | Scadenza: 15/
+ 20 (scade tra 8 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=0ab64ad5dbb647f099b05da3d754b714
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4533244c1f4bf1a26870e380d1a114ae@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:SCADENZA: Selezione: personale\, per titoli e colloquio\, per l’
+ assunzio
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 63/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/0ab64ad5dbb647f099b0
+ 5da3d754b714.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pe
+ rtinente (segreteria)) | Scadenza: 15/20 (scade tra 8 giorni)
+URL:https://ossian.cloud/concorsi/concorso/0ab64ad5dbb647f099b05da3d754b71
+ 4.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:034d2e887853e827dbf5ca3b9fa5e281@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:SCADENZA: Comune di Terralba - CONCORSO PUBBLICO\, CON TEST AMMISS
+ IONE 
+DESCRIPTION:Ente: Comune di Terralba\nPunteggio: 59/100\nSezione: compatib
+ ile\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/
+ ?concorso_id=e22b7e8376864e90ba46e8ea60adb93b\nNote: Titolo studio: 26/30
+  (profilo 'operatore esperto': diploma sufficiente) | Zona: 15/25 (altra 
+ sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente
+ ) | Scadenza: 15/20 (scade tra 15 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=e22b7e8376864e90ba46e8ea60adb93b
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:62453c8d800df647beecdd2daf6e84e2@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:SCADENZA: Concorso pubblico per esami per la copertura a tempo pie
+ no e
+DESCRIPTION:Ente: Citta' Metropolitana di Cagliari\nPunteggio: 59/100\nSez
+ ione: compatibile\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio
+ -bando-avviso/?concorso_id=93e9a6ef7d7e45468bceaf75d775e63a\nNote: Titolo
+  studio: 26/30 (profilo 'area degli istruttori': diploma sufficiente) | Z
+ ona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificat
+ o o non pertinente) | Scadenza: 15/20 (scade tra 15 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=93e9a6ef7d7e45468bceaf75d775e63a
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6376c64c65fede4c88a946ff5c515dcb@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:SCADENZA: Concorso: n. 4 istruttori tecnici\, area degli istruttor
+ i\, CC
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 59/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/93e9a6ef7d7e45468bce
+ af75d775e63a.html\nNote: Titolo studio: 26/30 (profilo 'istruttori': dipl
+ oma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (a
+ mbito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 15 g
+ iorni)
+URL:https://ossian.cloud/concorsi/concorso/93e9a6ef7d7e45468bceaf75d775e63
+ a.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:74a3b2e30ed9b672cb7e0c5d0508e77b@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:SCADENZA: Bando di Concorso Pubblico per soli esami\, per la coper
+ tura 
+DESCRIPTION:Ente: Comune di Musei\nPunteggio: 59/100\nSezione: compatibile
+ \nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?co
+ ncorso_id=5efd48e6e0684a7495c3f801bf7f5197\nNote: Titolo studio: 26/30 (p
+ rofilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sa
+ rdegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scaden
+ za: 15/20 (scade tra 18 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=5efd48e6e0684a7495c3f801bf7f5197
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9d841379482a3d3f4b401f354cce8ed2@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:SCADENZA: Concorso a tempo parziale: n.1 Istruttore Tecnico – Ar
+ ea deg
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 59/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/5efd48e6e0684a7495c3
+ f801bf7f5197.html\nNote: Titolo studio: 26/30 (profilo 'istruttore': dipl
+ oma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (a
+ mbito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 g
+ iorni)
+URL:https://ossian.cloud/concorsi/concorso/5efd48e6e0684a7495c3f801bf7f519
+ 7.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:75fb9dff083a9b09994f7a7220fcb447@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:SCADENZA: Agenzia Regionale per la Protezione dell’Ambiente dell
+ a Sard
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 59/100\nSezione: da_veri
+ ficare\nLink: https://www.concorsipubblici.com/agenzia-regionale-la-prote
+ zione-dellambiente-della-sardegna-concorso-istruttore-tecnico-cagliari\nN
+ ote: Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Z
+ ona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificat
+ o o non pertinente) | Scadenza: 15/20 (scade tra 27 giorni)
+URL:https://www.concorsipubblici.com/agenzia-regionale-la-protezione-della
+ mbiente-della-sardegna-concorso-istruttore-tecnico-cagliari
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5634a99e8904e15c14a7a069aba5e57f@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:SCADENZA: AVVISO PUBBLICO DI SELEZIONE COMPARATIVA\, PER SOLI TITO
+ LI\, P
+DESCRIPTION:Ente: Accademia di Belle Arti Mario Sironi\nPunteggio: 58/100\
+ nSezione: da_verificare\nLink: https://www.inpa.gov.it/bandi-e-avvisi/det
+ taglio-bando-avviso/?concorso_id=7ddaac05d0c04f168fdd48f1e01b399c\nNote: 
+ Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sa
+ ssari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertine
+ nte) | Scadenza: 15/20 (scade tra 13 giorni)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=7ddaac05d0c04f168fdd48f1e01b399c
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2dfb9f7a258cc1c2c70dab6fea9a7b50@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+SUMMARY:SCADENZA: CMPVL_AVVISO DI SELEZIONE PUBBLICA_per la formazione di 
+ un A
+DESCRIPTION:Ente: Comunita' Montana Partenio - Vallo di Lauro\nPunteggio: 
+ 58/100\nSezione: da_verificare\nLink: https://www.inpa.gov.it/bandi-e-avv
+ isi/dettaglio-bando-avviso/?concorso_id=00653ea4941d46c0bfc6bec46c8e4fe1\
+ nNote: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 5/
+ 25 (sede non specificata o nazionale) | Ambito: 18/25 (ambito pertinente 
+ (informatica)) | Scadenza: 20/20 (scade tra 367 giorni (ampio margine))
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=00653ea4941d46c0bfc6bec46c8e4fe1
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:54d4ed5921ce0aa6fe24179d59dd3375@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:SCADENZA: Selezione: n. 1 figura di tutor didattico ed amministrat
+ ivo 
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 56/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/0253879d53474bb5bbb5
+ c0ef3e509d01.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pe
+ rtinente (amministrativo)) | Scadenza: 8/20 (scade tra 1 giorni — URGEN
+ TE)
+URL:https://ossian.cloud/concorsi/concorso/0253879d53474bb5bbb5c0ef3e509d0
+ 1.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b1720885203bacd33ddbe1e82715e96c@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – AGRIS - APPROVAZIONE AVVISO PUBBL
+ ICO DI 
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 53/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=118054&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 20/20 (scade tra 37 giorni (ampio margine))
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=118054&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f0326b6920d845d0687ee59a3d710218@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20280621
+DTEND;VALUE=DATE:20280622
+SUMMARY:SCADENZA: AVVISO PUBBLICO DI SELEZIONE PER LA FORMAZIONE DI UNA GR
+ ADUA
+DESCRIPTION:Ente: Comune di Dolianova\nPunteggio: 53/100\nSezione: da_veri
+ ficare\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avvi
+ so/?concorso_id=88c38b46c902429baa595ac0d811697a\nNote: Titolo studio: 15
+ /30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sarde
+ gna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza:
+  20/20 (scade tra 605 giorni (ampio margine))
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=88c38b46c902429baa595ac0d811697a
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5a124dab1c4e92a4a8880559bb965942@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:SCADENZA: Concorso: 4 posti a tempo pieno e indeterminato Istrutto
+ re A
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 52/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/cab3d535ab6043909b3e
+ a56ab62d73cf.html\nNote: Titolo studio: 26/30 (profilo 'istruttore': dipl
+ oma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (a
+ mbito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 3 gio
+ rni — URGENTE)
+URL:https://ossian.cloud/concorsi/concorso/cab3d535ab6043909b3ea56ab62d73c
+ f.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b4d59fbc379d44ce25624575a4da73cb@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:SCADENZA: Concorso pubblico per esami\, copertura di 4 posti a tem
+ po pi
+DESCRIPTION:Ente: Comune di Siniscola\nPunteggio: 52/100\nSezione: compati
+ bile\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso
+ /?concorso_id=cab3d535ab6043909b3ea56ab62d73cf\nNote: Titolo studio: 26/3
+ 0 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede i
+ n Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Sc
+ adenza: 8/20 (scade tra 5 giorni — URGENTE)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=cab3d535ab6043909b3ea56ab62d73cf
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f10f15145008d51024cbcc6ce0630a7b@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:SCADENZA: Concorso pubblico per esami per la copertura di un posto
+  di 
+DESCRIPTION:Ente: Comune di Orroli\nPunteggio: 52/100\nSezione: compatibil
+ e\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?c
+ oncorso_id=041f1b85606641e5abd2f0debc8762e8\nNote: Titolo studio: 26/30 (
+ profilo 'operatore': diploma sufficiente) | Zona: 15/25 (altra sede in Sa
+ rdegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scaden
+ za: 8/20 (scade tra 5 giorni — URGENTE)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=041f1b85606641e5abd2f0debc8762e8
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dfc69d7a9fea6544bf8dfcae43562999@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:SCADENZA: Concorso: un posto di operatore esperto conduttore mezzi
+  pes
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 52/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/041f1b85606641e5abd2
+ f0debc8762e8.html\nNote: Titolo studio: 26/30 (profilo 'operatore esperto
+ ': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 
+ 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tr
+ a 5 giorni — URGENTE)
+URL:https://ossian.cloud/concorsi/concorso/041f1b85606641e5abd2f0debc8762e
+ 8.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:56237dc259becd4433bd4d11220c19f0@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:SCADENZA: APPROVAZIONE SCHEMA AVVISO PROCEDURA DI INTERPELLO A SEG
+ UITO
+DESCRIPTION:Ente: Comune di Palau\nPunteggio: 48/100\nSezione: da_verifica
+ re\nLink: https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?
+ concorso_id=200a36366c304a559a737107ed936141\nNote: Titolo studio: 12/30 
+ (profili misti (diploma e laurea): verificare il bando) | Zona: 25/25 (Sa
+ ssari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertine
+ nte) | Scadenza: 8/20 (scade tra 2 giorni — URGENTE)
+URL:https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concors
+ o_id=200a36366c304a559a737107ed936141
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:550b6880efa4b0f81b806e4e0e405513@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – CONSORZIO DI BONIFICA DELLA SARDE
+ GNA MER
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 48/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117986&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 15/20 (scade tra 12 giorni)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=117986&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4974175b2032b5fa35798d45e0021bdd@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:SCADENZA: Selezione: un incarico di lavoro autonomo per le funzion
+ i di
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 48/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/7ddaac05d0c04f168fdd
+ 48f1e01b399c.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 15/20 (scade tra 13 giorni)
+URL:https://ossian.cloud/concorsi/concorso/7ddaac05d0c04f168fdd48f1e01b399
+ c.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7e31334be641ba873b0ab8be66b29a22@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:SCADENZA: Concorso: con test ammissione e prova pratica\, per la c
+ opert
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 48/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/e22b7e8376864e90ba46
+ e8ea60adb93b.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 15/20 (scade tra 15 giorni)
+URL:https://ossian.cloud/concorsi/concorso/e22b7e8376864e90ba46e8ea60adb93
+ b.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d8d8dc2ee050f080bb8c89b2cf61cf55@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – AGRIS SARDEGNA - APPROVAZIONE AVV
+ ISO PUB
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 48/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117678&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 15/20 (scade tra 17 giorni)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=117678&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:db087426c59e1938afc18fbfff4b9e53@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:SCADENZA: Concorso: due posti di allievo ormeggiatore nella societ
+ à co
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 48/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/42bbad2e44310f5fc6b2
+ ee2b23d31c2d.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 giorni)
+URL:https://ossian.cloud/concorsi/concorso/42bbad2e44310f5fc6b2ee2b23d31c2
+ d.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0138760081d3ed5c7c2133035bf8fb0b@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:SCADENZA: Concorso Ormeggiatore Cagliari 2026 presso Ministero del
+ le I
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 48/100\nSezione: da_veri
+ ficare\nLink: https://www.concorsipubblici.com/ministero-delle-infrastrut
+ ture-e-dei-trasporti-concorso-ormeggiatore-cagliari-2026\nNote: Titolo st
+ udio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede 
+ in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | S
+ cadenza: 15/20 (scade tra 18 giorni)
+URL:https://www.concorsipubblici.com/ministero-delle-infrastrutture-e-dei-
+ trasporti-concorso-ormeggiatore-cagliari-2026
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2177a311fb566e063f7622191f7b7ba2@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:SCADENZA: Concorso: riservato agli appartenenti alle categorie pro
+ tett
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 48/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/7c14d62a78094603ad2f
+ 06bb483d08b2.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 15/20 (scade tra 19 giorni)
+URL:https://ossian.cloud/concorsi/concorso/7c14d62a78094603ad2f06bb483d08b
+ 2.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca0aaa1a78d5057fbe007b03babab786@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – AGRIS - APPROVAZIONE AVVISO PUBBL
+ ICO DI 
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 48/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117574&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 15/20 (scade tra 21 giorni)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=117574&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2c7192715b58ce3aa2e083458353de2a@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – ARNAS G. BROTZU - APPROVAZIONE AV
+ VISO PU
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 41/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117454&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 8/20 (scade tra 0 giorni — URGENTE)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=117454&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:539451f5b87a792bff137b962dbdb259@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:SCADENZA: Selezione: un incarico presso l’ufficio di staff del s
+ indaco
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 41/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/2dc8e95291df4ca794fa
+ a5e4aa4362a0.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 8/20 (scade tra 1 giorni — U
+ RGENTE)
+URL:https://ossian.cloud/concorsi/concorso/2dc8e95291df4ca794faa5e4aa4362a
+ 0.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1ccfcca38264d056ef3c78987a910ef9@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:SCADENZA: Approvazione schema avviso procedura di interpello a seg
+ uito
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 41/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/200a36366c304a559a73
+ 7107ed936141.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 8/20 (scade tra 2 giorni — U
+ RGENTE)
+URL:https://ossian.cloud/concorsi/concorso/200a36366c304a559a737107ed93614
+ 1.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d8f9b86e125f7d40f1b1544f4e4aba7e@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:SCADENZA: Comune di Siniscola\, 4 posti di poliziotto municipale
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 41/100\nSezione: da_veri
+ ficare\nLink: https://www.concorsipubblici.com/comune-di-siniscola-concor
+ so-poliziotto-municipale-agente-polizia-locale-agente-di-polizia\nNote: T
+ itolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (alt
+ ra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertine
+ nte) | Scadenza: 8/20 (scade tra 3 giorni — URGENTE)
+URL:https://www.concorsipubblici.com/comune-di-siniscola-concorso-poliziot
+ to-municipale-agente-polizia-locale-agente-di-polizia
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ba8f7c8104c1f24c8a3b95d9f979065e@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – CONSORZIO DI BONIFICA DELLA SARDE
+ GNA MER
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 41/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117929&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=117929&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2d18d1c66ed710d8605ec219429d83de@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:SCADENZA: Selezione: un incarico ex art. 90 tuel con contratto a t
+ empo
+DESCRIPTION:Ente: Ente della Sardegna\nPunteggio: 41/100\nSezione: da_veri
+ ficare\nLink: https://ossian.cloud/concorsi/concorso/463ee28680644aa0a013
+ ed128a25cb35.html\nNote: Titolo studio: 15/30 (titolo di studio non speci
+ ficato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non
+  specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — U
+ RGENTE)
+URL:https://ossian.cloud/concorsi/concorso/463ee28680644aa0a013ed128a25cb3
+ 5.html
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:55a051198718124c483aa10f80944780@monitorconcorsi
+DTSTAMP:20261024T222355Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:SCADENZA: ART. 16\, L. 56/87 – CONSORZIO DI BONIFICA SARDEGNA ME
+ RIDIONA
+DESCRIPTION:Ente: ASPAL - Agenzia Regionale per il Lavoro\nPunteggio: 41/1
+ 00\nSezione: da_verificare\nLink: https://agenziaregionaleperillavoro.reg
+ ione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117821&tipoconc=2\n
+ Note: Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/
+ 25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non 
+ pertinente) | Scadenza: 8/20 (scade tra 6 giorni — URGENTE)
+URL:https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&
+ v=9&c=93504&c1=4920&id=117821&tipoconc=2
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza tra 7 giorni
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Scadenza domani!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

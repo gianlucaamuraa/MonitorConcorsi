@@ -1,0 +1,10 @@
+# Dipendenze (Python 3.10 o superiore)
+# Versioni minime: pip installa le più recenti compatibili con il tuo Python.
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.3
+feedparser>=6.0
+APScheduler>=3.10,<4     # la 4.x ha un'API diversa
+pyyaml>=6.0
+rapidfuzz>=3.10
+tzdata>=2024.2           # fusi orari su Windows (Europe/Rome)

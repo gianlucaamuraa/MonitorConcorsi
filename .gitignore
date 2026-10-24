@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+sito/
+data/monitor.log
+data/*.db-journal

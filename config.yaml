@@ -1,0 +1,51 @@
+# ============================================================
+# MonitorConcorsi — Configurazione profilo utente e sistema
+# ============================================================
+
+# --- Profilo utente (modifica questi dati con i tuoi) ---
+profilo:
+  titolo_studio: "diploma"          # diploma | laurea
+  indirizzo_studio: "informatica"   # es. informatica, ragioneria, ecc.
+  patente: ["B"]
+  zona_prioritaria: "Sassari"
+  raggio_km: 50                     # raggio per "vicino a Sassari"
+  dipendente_pubblico: false        # true = mostra anche mobilità e procedure interne
+  ambiti_preferiti:
+    - "informatica"
+    - "amministrativo"
+    - "tributi"
+    - "riscossione"
+    - "entrate"
+    - "gestione dati"
+    - "digitalizzazione"
+    - "assistenza IT"
+    - "excel"
+    - "sistemi informativi"
+
+# --- Impostazioni scansione ---
+scansione:
+  orario_giornaliero: "07:00"       # orario scansione automatica (HH:MM, ora italiana)
+  pausa_tra_richieste_sec: 3        # pausa base tra richieste HTTP
+  pausa_max_sec: 8                  # pausa massima (casuale tra pausa_base e pausa_max)
+  user_agent: "MonitorConcorsi/1.0 (uso personale, non commerciale; contatto: monitorconc@proton.me)"
+  timeout_sec: 30
+  max_retry: 3
+
+# --- Telegram (lascia vuoto se non usi le notifiche) ---
+telegram:
+  bot_token: ""                     # Token del bot (da @BotFather)
+  chat_id: ""                       # Il tuo chat_id (da @userinfobot)
+  attivo: false
+
+# --- GitHub Actions (lascia vuoto se usi solo locale) ---
+github:
+  attivo: false
+  repo: ""                          # es. tuonome/MonitorConcorsi
+
+# --- Percorsi dati ---
+dati:
+  db_path: "data/concorsi.db"
+  log_path: "data/scan_log.json"
+  report_path: "data/report_giornaliero.html"
+  ics_path: "data/scadenze.ics"
+  json_path: "data/bandi.json"
