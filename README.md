@@ -41,8 +41,11 @@ Configurate in `fonti.yaml`:
   quelli con sede in Sardegna e quelli nazionali (sedi in 5 o più regioni).
 - **Gazzetta Ufficiale, 4ª Serie Speciale Concorsi**: feed RSS dell'ultimo numero.
 - **Siti di enti** (tipo `html` o `rss`): basta indicare l'indirizzo della pagina dei
-  bandi. Comune di Sassari, Regione e Uniss sono già predisposti ma disattivati,
-  perché va inserito l'indirizzo esatto della loro pagina concorsi.
+  bandi. Sono già attivi, tra gli altri, Comune di Sassari (raccolta concorsi
+  regionali), Città Metropolitana, Uniss, AOU, ATP Sassari, ASPAL, Forestas, ARES,
+  AREUS, Abbanoa e una quarantina di Comuni e Unioni della provincia di Sassari.
+  In fondo a `fonti.yaml` ci sono i siti verificati e scartati, con il motivo
+  (spesso il loro `robots.txt` vieta la lettura automatica).
 
 ## Bandi scaduti
 

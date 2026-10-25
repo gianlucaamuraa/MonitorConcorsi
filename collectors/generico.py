@@ -6,10 +6,24 @@ Due tipi, per aggiungere siti di enti senza scrivere codice:
   tipo: html  → scarica una pagina e prende i link il cui testo sembra un bando
                 (concorso, selezione, avviso, posti...).
                 - selettore: CSS per limitare la ricerca a una parte della pagina
+                - max_giorni_pubblicazione: per le pagine di notizie senza scadenza,
+                             scarta le voci pubblicate da più di N giorni
+                             (data letta dal riquadro, es. "Novità 12 ott 2026")
+                - dettagli:  true per gli elenchi senza date: per le voci senza
+                             scadenza apre la pagina del bando (al massimo
+                             max_dettagli, default 10) e la scarta se è scaduta o
+                             se la data più recente citata è più vecchia di
+                             max_giorni_pubblicazione (default 60)
+                - verifica_ssl: false per i siti con certificato intestato male
+                - sottomenu_di: parte dell'indirizzo di un link di menu; si leggono
+                             solo le voci del suo sottomenu (per i menu che
+                             cambiano classi e id a ogni visita)
                 - blocco:    CSS di un riquadro che contiene UN bando (titolo,
                              date, ente). Ogni riquadro diventa un bando e la
                              scadenza si legge dal testo del riquadro.
   tipo: rss   → legge un feed RSS/Atom.
+
+Nell'indirizzo si può scrivere {anno}: diventa l'anno in corso.
 
 Bandi scaduti: se nel testo c'è una scadenza già passata la voce viene scartata.
 Se la scadenza non c'è, la voce viene scartata quando cita solo anni passati
@@ -23,9 +37,11 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 from collectors.base import CollettoreBase
-from core.dates import a_iso, anno_piu_recente, estrai_scadenza, is_scaduto, oggi
+from core.dates import (a_iso, anno_piu_recente, data_piu_recente, estrai_scadenza,
+                        is_scaduto, oggi, parse_data)
 
-FILTRO_DEFAULT = r"concors|selezion|avviso|bando|mobilit|reclutament|assunzion|\bpost[oi]\b"
+FILTRO_DEFAULT = (r"concors|selezion|avviso|bando|mobilit|reclutament|assunzion|\bpost[oi]\b|"
+                  r"interpello|\bistruttor[ei]\b|\bfunzionari[oa]?\b")
 ESCLUSI_DEFAULT = (
     r"graduatori|esito|esiti|diario|calendario|commission|tracce|ammess|"
     r"verbale|rettifica|revoca|archivio|scadut|gara|appalt|affidament|"
@@ -33,7 +49,9 @@ ESCLUSI_DEFAULT = (
     r"continua a leggere|leggi tutto|visita la pagina|regolamento|tabella riepilogativa|"
     r"espletat|presa d.atto|erasmus|borsa di studio|tirocini|in corso di svolgimento|"
     r"il portale dei concorsi|area geografica|^selezioni per altre pubbliche amministrazioni|"
-    r"^categoria\b"
+    r"^categoria\b|scrutator|seggi[oi] elettoral|convocazion|ammission|"
+    r"prova (?:preselettiva|scritta|orale|pratica)|rinvio (?:delle |della )?prov|"
+    r"riciclon|presepi|concorso (?:fotografic|di idee|letterari|di poesia|artistic|canor|musical)"
 )
 LUNGHEZZA_MIN_TITOLO = 30   # i testi più corti sono voci di menu ("Bandi di concorso")
 
@@ -58,8 +76,12 @@ class CollettoreGenerico(CollettoreBase):
 
     def __init__(self, nome: str, url: str, tipo: str = "html", ente: str = "",
                  sede: str = None, selettore: str = None, blocco: str = None,
+                 sottomenu_di: str = None, max_giorni_pubblicazione: int = None,
+                 verifica_ssl: bool = True, dettagli: bool = False, max_dettagli: int = 10,
                  ente_dal_contesto: bool = False,
                  filtro: str = None, escludi: str = None, escludi_link: str = None, **_):
+        # {anno} nell'indirizzo = anno in corso (pagine divise per anno, es. .../2026)
+        url = url.replace("{anno}", str(oggi().year))
         self.NOME_FONTE = nome
         self.URL_BASE = url
         super().__init__()
@@ -68,6 +90,16 @@ class CollettoreGenerico(CollettoreBase):
         self.ente = ente or nome
         self.sede = sede
         self.selettore = selettore
+        self.sottomenu_di = sottomenu_di
+        self.max_giorni_pubblicazione = max_giorni_pubblicazione
+        self.dettagli = dettagli
+        self.max_dettagli = max_dettagli
+        if not verifica_ssl:
+            # Alcuni siti comunali hanno un certificato intestato a un altro nome:
+            # si legge solo una pagina pubblica, quindi si accetta lo stesso.
+            import urllib3
+            urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+            self.session.verify = False
         self.blocco = blocco
         self.ente_dal_contesto = ente_dal_contesto
         self.re_filtro = re.compile(filtro or FILTRO_DEFAULT, re.IGNORECASE)
@@ -89,6 +121,7 @@ class CollettoreGenerico(CollettoreBase):
             return []
 
         bandi, visti = [], set()
+        aperti = 0   # pagine di dettaglio già aperte (opzione "dettagli")
         for v in voci:
             titolo, link, extra = _spazi(v["titolo"]), v["link"], _spazi(v.get("extra", ""))
             # Link con testo corto ("Avviso del 22 ottobre 2026"): uso la riga intera,
@@ -112,6 +145,22 @@ class CollettoreGenerico(CollettoreBase):
                 continue
             if scadenza is None and _vecchio(titolo, link, extra):
                 continue
+            if scadenza is None and self.max_giorni_pubblicazione:
+                pubblicato = parse_data(extra) or parse_data(titolo)
+                if pubblicato and (oggi() - pubblicato).days > self.max_giorni_pubblicazione:
+                    continue
+            if scadenza is None and self.dettagli:
+                # Elenco senza date: apro la pagina del bando (solo le prime, le più recenti)
+                if aperti >= self.max_dettagli:
+                    continue
+                aperti += 1
+                scadenza, recente = self._date_dal_dettaglio(link)
+                if scadenza and is_scaduto(scadenza):
+                    continue
+                if scadenza is None:
+                    limite = self.max_giorni_pubblicazione or 60
+                    if recente is None or (oggi() - recente).days > limite:
+                        continue
 
             bandi.append(self._crea_bando(
                 titolo=titolo[:300],
@@ -124,18 +173,44 @@ class CollettoreGenerico(CollettoreBase):
         self.logger.info(f"[{self.NOME_FONTE}] {len(bandi)} bandi trovati")
         return bandi
 
+    def _date_dal_dettaglio(self, link: str):
+        """(scadenza, data più recente) lette dalla pagina del bando; (None, None) se non è HTML."""
+        self._pausa()
+        r = self.get(link)
+        if r is None or "html" not in r.headers.get("content-type", "html"):
+            return None, None
+        zuppa = BeautifulSoup(r.content, "lxml")
+        for tag in zuppa(["script", "style", "nav", "header", "footer"]):
+            tag.decompose()
+        testo = _spazi(zuppa.get_text(" "))
+        return estrai_scadenza(testo), data_piu_recente(testo)
+
     # ------------------------------------------------------------------
     def _pagina(self):
         r = self.get(self.url)
         if r is None:
             return None
         zuppa = BeautifulSoup(r.content, "lxml")
-        if not self.selettore:
+        if not self.selettore and not self.sottomenu_di:
             return zuppa
-        aree = zuppa.select(self.selettore)
+        if self.sottomenu_di:
+            aree = []
+            for a in zuppa.find_all("a", href=re.compile(re.escape(self.sottomenu_di))):
+                voce = a.find_parent("li")
+                sotto = voce.find("ul") if voce else None
+                if sotto is not None and sotto not in aree:
+                    aree.append(sotto)
+            cosa = f"sottomenu di '{self.sottomenu_di}'"
+        else:
+            aree = zuppa.select(self.selettore)
+            cosa = f"selettore '{self.selettore}'"
         if not aree:
-            self._registra_errore(self.url, f"selettore '{self.selettore}' non trovato",
-                                  "struttura_cambiata")
+            # Dico anche cosa è arrivato: spesso è una pagina di blocco o di errore
+            titolo = _spazi(zuppa.title.get_text()) if zuppa.title else "senza titolo"
+            self._registra_errore(
+                self.url,
+                f"{cosa} non trovato (ricevuta pagina '{titolo[:80]}', {len(r.content)} byte)",
+                "struttura_cambiata")
             return None
         # Più aree → le unisco in un unico contenitore
         contenitore = BeautifulSoup("<div></div>", "lxml").div

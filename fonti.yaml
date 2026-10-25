@@ -18,6 +18,14 @@
 #   filtro     (opzionale) regex: il testo del link deve contenerla
 #   escludi    (opzionale) regex: testi dei link da ignorare
 #   escludi_link (opzionale) regex: indirizzi dei link da ignorare
+#   sottomenu_di (opzionale) parte dell'indirizzo di una voce di menu: si leggono
+#              solo i link del suo sottomenu
+#   dettagli   (opzionale) true per gli elenchi senza date: apre la pagina dei
+#              bandi senza scadenza (al massimo max_dettagli, default 10)
+#   max_giorni_pubblicazione (opzionale) senza scadenza, scarta le voci
+#              pubblicate da più di N giorni (pagine di notizie)
+#   verifica_ssl (opzionale) false se il certificato del sito è intestato male
+#   Nell'url si può scrivere {anno}: diventa l'anno in corso.
 #
 # Tipo "rss": url del feed, più ente/sede come sopra.
 #
@@ -84,8 +92,341 @@ fonti:
     url: "https://atpsassari.portaletrasparenza.net/it/trasparenza/selezione-del-personale/reclutamento-del-personale/bandi-e-avvisi-di-selezione-per-i-quali-e-possibile-presentare-domanda-di-partecipazione.html"
     ente: "ATP Sassari"
     sede: "Sassari"
-    selettore: "ul.menu-level-4.show"     # elenco dei bandi aperti nel menu della pagina
+    # Elenco dei bandi aperti = sottomenu della voce "Bandi e avvisi per i quali è
+    # possibile presentare domanda". Classi e id del menu cambiano a ogni visita.
+    sottomenu_di: "per-i-quali-e-possibile-presentare-domanda"
     ufficiale: true
+
+  # --- Comuni e Unioni della provincia di Sassari (aggiunti il 25/10/2026) -----
+  # Piattaforma Halley: tabella "Bandi di concorso - In corso" con la scadenza
+  # su ogni riga. La tabella tiene anche bandi scaduti: li scarta il programma.
+  - nome: ardara
+    tipo: html
+    url: "https://egov5.halleysardegna.com/ardara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Ardara"
+    sede: "Ardara (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: banari
+    tipo: html
+    url: "https://sol.comune.banari.ss.it/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Banari"
+    sede: "Banari (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: borutta
+    tipo: html
+    url: "https://egov.halleysardegna.com/borutta/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Borutta"
+    sede: "Borutta (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: bulzi
+    tipo: html
+    url: "https://sol.comune.bulzi.ss.it/bulzi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Bulzi"
+    sede: "Bulzi (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: castelsardo
+    tipo: html
+    url: "https://sol.comune.castelsardo.ss.it/castelsardo/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Castelsardo"
+    sede: "Castelsardo (provincia di Sassari)"
+    blocco: "table tbody tr"
+    verifica_ssl: false        # certificato intestato a un altro indirizzo
+
+  - nome: chiaramonti
+    tipo: html
+    url: "https://egov7.halleysardegna.com/chiaramonti/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Chiaramonti"
+    sede: "Chiaramonti (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: giave
+    tipo: html
+    url: "https://sac2-hs.halleysac.it/giave/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Giave"
+    sede: "Giave (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: laerru
+    tipo: html
+    url: "https://egov.halleysardegna.com/laerru/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Laerru"
+    sede: "Laerru (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: mara
+    tipo: html
+    url: "https://sac2-hs.halleysac.it/mara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Mara"
+    sede: "Mara (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: martis
+    tipo: html
+    url: "https://servizi.comune.martis.ss.it/martis/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Martis"
+    sede: "Martis (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: muros
+    tipo: html
+    url: "https://sol.comune.muros.ss.it/muros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Muros"
+    sede: "Muros (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: ossi
+    tipo: html
+    url: "https://sol.comune.ossi.ss.it/ossi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Ossi"
+    sede: "Ossi (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: ploaghe
+    tipo: html
+    url: "https://egov7.halleysardegna.com/ploaghe/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Ploaghe"
+    sede: "Ploaghe (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: pozzomaggiore
+    tipo: html
+    url: "https://egov.halleysardegna.com/pozzomaggiore/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Pozzomaggiore"
+    sede: "Pozzomaggiore (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: sedini
+    tipo: html
+    url: "https://sac2-hs.halleysac.it/sedini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Sedini"
+    sede: "Sedini (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: thiesi
+    tipo: html
+    url: "https://egov5.halleysardegna.com/thiesi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Thiesi"
+    sede: "Thiesi (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: torralba
+    tipo: html
+    url: "https://egov.halleysardegna.com/torralba/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Torralba"
+    sede: "Torralba (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: uri
+    tipo: html
+    url: "https://egov.halleysardegna.com/uri/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Uri"
+    sede: "Uri (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: usini
+    tipo: html
+    url: "https://sac2-hs.halleysac.it/usini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Comune di Usini"
+    sede: "Usini (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: unione_coros
+    tipo: html
+    url: "https://sol.unionecoros.it/udccoros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Unione dei Comuni del Coros"
+    sede: "Unione Coros (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  - nome: unione_logudoro
+    tipo: html
+    url: "https://egov4.halleysardegna.com/udclogudoro/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
+    ente: "Unione dei Comuni del Logudoro"
+    sede: "Unione Logudoro (provincia di Sassari)"
+    blocco: "table tbody tr"
+
+  # Pagine di notizie (argomento Concorsi o Lavoro): niente scadenza in elenco,
+  # quindi si scartano le notizie più vecchie di 45 giorni e si apre la pagina
+  # del bando per cercare la scadenza.
+  - nome: bessude            # argomento Lavoro
+    tipo: html
+    url: "https://comune.bessude.ss.it/argomenti/argomento-dettaglio/1769853"
+    ente: "Comune di Bessude"
+    sede: "Bessude (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: bonnanaro            # argomento Concorsi
+    tipo: html
+    url: "https://www.comune.bonnanaro.ss.it/argomenti/argomento-dettaglio/2383402"
+    ente: "Comune di Bonnanaro"
+    sede: "Bonnanaro (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: cargeghe            # argomento Concorsi (la pagina Halley vieta la lettura)
+    tipo: html
+    url: "https://comune.cargeghe.ss.it/argomenti/argomento-dettaglio/2298447"
+    ente: "Comune di Cargeghe"
+    sede: "Cargeghe (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: cossoine            # argomento Concorsi
+    tipo: html
+    url: "https://comune.cossoine.ss.it/argomenti/argomento-dettaglio/1783023"
+    ente: "Comune di Cossoine"
+    sede: "Cossoine (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: erula            # argomento Lavoro
+    tipo: html
+    url: "https://comune.erula.ss.it/argomenti/argomento-dettaglio/3381906"
+    ente: "Comune di Erula"
+    sede: "Erula (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: florinas            # argomento Lavoro
+    tipo: html
+    url: "https://comune.florinas.ss.it/argomenti/argomento-dettaglio/2796854"
+    ente: "Comune di Florinas"
+    sede: "Florinas (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: mores            # argomento Lavoro
+    tipo: html
+    url: "https://comune.mores.ss.it/argomenti/argomento-dettaglio/1769749"
+    ente: "Comune di Mores"
+    sede: "Mores (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: olmedo            # argomento Concorsi
+    tipo: html
+    url: "https://comune.olmedo.ss.it/argomento/concorsi/"
+    ente: "Comune di Olmedo"
+    sede: "Olmedo (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: osilo            # argomento Lavoro
+    tipo: html
+    url: "https://comune.osilo.ss.it/argomenti/argomento-dettaglio/2665330"
+    ente: "Comune di Osilo"
+    sede: "Osilo (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: santa_maria_coghinas            # argomento Concorsi
+    tipo: html
+    url: "https://comune.santamariacoghinas.ss.it/argomenti/argomento-dettaglio/2361185"
+    ente: "Comune di Santa Maria Coghinas"
+    sede: "Santa Maria Coghinas (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: semestene            # argomento Lavoro
+    tipo: html
+    url: "https://comune.semestene.ss.it/argomenti/argomento-dettaglio/2559304"
+    ente: "Comune di Semestene"
+    sede: "Semestene (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: sennori            # argomento Concorsi
+    tipo: html
+    url: "https://www.comune.sennori.ss.it/argomento/concorsi/"
+    ente: "Comune di Sennori"
+    sede: "Sennori (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: siligo            # argomento Concorsi
+    tipo: html
+    url: "https://comune.siligo.ss.it/argomenti/argomento-dettaglio/2395951"
+    ente: "Comune di Siligo"
+    sede: "Siligo (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: stintino            # comunicazioni Concorsi
+    tipo: html
+    url: "https://www.comune.stintino.ss.it/index.php/tzente/comunicazioni/concorsi"
+    ente: "Comune di Stintino"
+    sede: "Stintino (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: tissi            # argomento Lavoro
+    tipo: html
+    url: "https://comune.tissi.ss.it/argomenti/argomento-dettaglio/2372588"
+    ente: "Comune di Tissi"
+    sede: "Tissi (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: valledoria            # argomento Concorsi
+    tipo: html
+    url: "https://comune.valledoria.ss.it/argomenti/argomento-dettaglio/2357044"
+    ente: "Comune di Valledoria"
+    sede: "Valledoria (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: viddalba            # argomento Concorsi (la pagina Halley vieta la lettura)
+    tipo: html
+    url: "https://comune.viddalba.ss.it/argomenti/argomento-dettaglio/2615065"
+    ente: "Comune di Viddalba"
+    sede: "Viddalba (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  # Amministrazione trasparente senza date in elenco: si apre la pagina del bando.
+  - nome: monteleone_rocca_doria
+    tipo: html
+    url: "https://comune.monteleoneroccadoria.ss.it/amministrazione-trasparente/sezioni/2323810-bandi-concorso"
+    ente: "Comune di Monteleone Rocca Doria"
+    sede: "Monteleone Rocca Doria (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: perfugas
+    tipo: html
+    url: "https://comune.perfugas.ss.it/amministrazione-trasparente/sezioni/2467280-bandi-concorso"
+    ente: "Comune di Perfugas"
+    sede: "Perfugas (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: sorso
+    tipo: html
+    url: "https://www.comune.sorso.ss.it/Amministrazione-Trasparente/Bandi-di-concorso/{anno}"
+    ente: "Comune di Sorso"
+    sede: "Sorso (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: padria
+    tipo: html
+    url: "https://trasparenza.tinnvision.cloud/traspamm/bandi/interactive/00297880908/concorsi.html/?idsezione=155&idperiodosezioni=2&idannopubblicazione=-1&rows=10&page=1"
+    ente: "Comune di Padria"
+    sede: "Padria (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
+
+  - nome: unione_villanova
+    tipo: html
+    url: "https://trasparenza.tinnvision.cloud/traspamm/bandi/interactive/02310660903/concorsi.html/?idsezione=155&idperiodosezioni=2&idannopubblicazione=-1&rows=10&page=1"
+    ente: "Unione dei Comuni del Villanova"
+    sede: "Unione Villanova (provincia di Sassari)"
+    dettagli: true
+    max_giorni_pubblicazione: 45
 
   # --- Enti regionali -------------------------------------------------------------
 
@@ -99,7 +440,21 @@ fonti:
   - nome: aspal_avvisi
     tipo: html
     url: "https://www.aspalsardegna.it/tipi_notizia/avvisi-pubblici/"
-    ente: "ASPAL"
+    ente: "ASPAL - Agenzia Regionale per il Lavoro"
+    sede: "Sardegna"
+
+  # Concorsi e selezioni di ASPAL stessa e dell'Agenzia Forestas (stessa pagina
+  # dell'art. 16, altra categoria)
+  - nome: aspal_concorsi
+    tipo: html
+    url: "https://agenziaregionaleperillavoro.regione.sardegna.it/index.php?xsl=2362&s=44&v=9&c=93502&nodesc=2&c1=4920&tipodoc=2&tipoconc=1"
+    ente: "ASPAL - Agenzia Regionale per il Lavoro"
+    sede: "Sardegna"
+
+  - nome: forestas
+    tipo: html
+    url: "https://agenziaregionaleperillavoro.regione.sardegna.it/index.php?xsl=2362&s=44&v=9&c=93506&nodesc=2&c1=4920&tipodoc=2&tipoconc=4"
+    ente: "Agenzia Forestas"
     sede: "Sardegna"
 
   - nome: ares_sardegna
@@ -114,11 +469,16 @@ fonti:
     ente: "AREUS Sardegna"
     sede: "Sardegna"
 
+  # La pagina "Selezioni Aperte" di abbanoa.it non contiene l'elenco: lo carica
+  # dalla piattaforma Intervieweb. Si legge quindi l'elenco direttamente da lì
+  # (k = codice pubblico di Abbanoa, preso dalla pagina). Gli annunci si
+  # chiamano "N. 2 Addetti ... - RIF. 12/26": il filtro cerca "RIF.".
   - nome: abbanoa_aperte
     tipo: html
-    url: "https://www.abbanoa.it/Societa-Trasparente/Selezione-del-Personale/Reclutamento-del-Personale/Selezioni-Aperte"
+    url: "https://abbanoa.intervieweb.it/app.php?module=iframeAnnunci&lang=it&k=3e4ae650fea2042033104c8a854d2c65&d=www.abbanoa.it&act1=23&defgroup=date&gnavenable=1&desc=1&annType=published&typeView=large"
     ente: "Abbanoa"
     sede: "Sardegna"
+    filtro: "\\bRIF\\.|selezion|avviso"
 
   # --- Enti nazionali -------------------------------------------------------------
 
@@ -168,6 +528,18 @@ fonti:
 #   INAIL           robots.txt ne vieta la lettura automatica: va rispettato
 #   AREA Sardegna   vecchio indirizzo inesistente (404); la nuova pagina
 #                   carica l'elenco con JavaScript
+# robots.txt vieta la lettura automatica (va rispettato):
+#   Halley di Cheremule, Codrongianos, Nulvi, Putifigari, Tergu,
+#   Villanova Monteleone, Unione Meilogu, Unione Anglona (e Cargeghe, Viddalba:
+#   per questi due si usa la pagina "Concorsi" del sito principale)
+#   albo.comune.it / nziweb.comune.it (Bonorva, Mores, Sennori, Stintino,
+#   Bessude, Erula, Siligo, Semestene): per questi si usa il sito principale,
+#   tranne Bonorva, che non ha una pagina concorsi leggibile
+# Nessuna pagina concorsi trovata o leggibile:
+#   Romana, Unione Nord Ovest; Ittiri (portale trasparenza solo con JavaScript);
+#   Alghero, Porto Torres, Comune di Sassari "argomento Concorsi" e Padria
+#   "argomento Concorsi": l'elenco delle notizie non è nella pagina
+#   → i loro concorsi sono comunque pubblicati su InPA
 # Pagina senza elenco leggibile (caricato con JavaScript o assente):
 #   Regione Sardegna concorsi e selezioni, Comune di Sassari "Concorsi",
 #   SardegnaIT (avvisi e selezioni in corso), Ministero dell'Interno,

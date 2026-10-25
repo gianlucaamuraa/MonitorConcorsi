@@ -11,6 +11,22 @@ from datetime import datetime
 from pathlib import Path
 
 
+def enti_monitorati() -> list[dict]:
+    """Enti con una fonte propria in fonti.yaml, per il filtro "Ente" della pagina.
+    Restano fuori gli aggregatori e i portali nazionali (InPA, Gazzetta): i loro
+    enti compaiono nel filtro solo quando hanno bandi."""
+    from core.config import carica_fonti
+
+    enti = {}
+    for f in carica_fonti():
+        ente = (f.get("ente") or "").strip()
+        if (not f.get("attivo", True) or f.get("ufficiale") is False or not ente
+                or f.get("tipo") not in ("html", "rss") or ente.lower().startswith("ente della")):
+            continue
+        enti.setdefault(ente, []).append(f["nome"])
+    return [{"ente": e, "fonti": n} for e, n in sorted(enti.items())]
+
+
 def dati_interfaccia() -> dict:
     """Bandi attivi, fonti in errore e info sull'ultima scansione."""
     from core.db import get_bandi, get_connection, get_fonti_in_errore
@@ -33,6 +49,7 @@ def dati_interfaccia() -> dict:
         "ultima_scansione": ultima,
         "bandi": bandi,
         "errori": get_fonti_in_errore(),
+        "enti_monitorati": enti_monitorati(),
     }
 
 

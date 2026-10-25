@@ -118,6 +118,7 @@ class CollettoreBase:
     def _richiesta(self, metodo: str, url: str, **kwargs) -> requests.Response | None:
         """Richiesta HTTP con retry, backoff e registrazione degli errori."""
         MAX_TENTATIVI = self.max_tentativi
+        causa = "nessuna risposta"   # ultimo problema, per spiegare l'errore finale
         for tentativo in range(1, MAX_TENTATIVI + 1):
             try:
                 self.logger.debug(f"{metodo} {url} (tentativo {tentativo}/{MAX_TENTATIVI})")
@@ -144,6 +145,7 @@ class CollettoreBase:
                 elif risposta.status_code == 429:
                     # Troppi tentativi: attendi più a lungo
                     attesa = 60 * tentativo
+                    causa = "HTTP 429 (troppe richieste)"
                     self.logger.warning(
                         f"[{self.NOME_FONTE}] Rate limit (429) su {url}. Attendo {attesa}s"
                     )
@@ -152,6 +154,7 @@ class CollettoreBase:
                 elif risposta.status_code >= 500:
                     # Errore server: ritenta con backoff
                     attesa = 10 * tentativo
+                    causa = f"HTTP {risposta.status_code} (errore del sito)"
                     self.logger.warning(
                         f"[{self.NOME_FONTE}] Errore server {risposta.status_code} su {url}. "
                         f"Ritento in {attesa}s"
@@ -167,10 +170,12 @@ class CollettoreBase:
 
             except requests.exceptions.ConnectionError as e:
                 self.logger.warning(f"[{self.NOME_FONTE}] Connessione fallita ({url}): {e}")
+                causa = "connessione rifiutata o interrotta"
                 time.sleep(5 * tentativo)
 
             except requests.exceptions.Timeout:
                 self.logger.warning(f"[{self.NOME_FONTE}] Timeout su {url} (tentativo {tentativo})")
+                causa = f"il sito non risponde entro {self.timeout} secondi"
                 time.sleep(5 * tentativo)
 
             except Exception as e:
@@ -180,7 +185,7 @@ class CollettoreBase:
 
         # Tutti i tentativi esauriti
         self.logger.error(f"[{self.NOME_FONTE}] Impossibile raggiungere {url} dopo {MAX_TENTATIVI} tentativi")
-        self._registra_errore(url, "Tutti i tentativi esauriti", "errore_rete")
+        self._registra_errore(url, f"Tutti i tentativi esauriti: {causa}", "errore_rete")
         return None
 
     def _pausa(self):

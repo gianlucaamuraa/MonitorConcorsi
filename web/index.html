@@ -106,6 +106,12 @@
                         </select>
                     </div>
                     <div class="filtro-gruppo">
+                        <label for="filtro-ente">Ente</label>
+                        <select id="filtro-ente" onchange="filtra()">
+                            <option value="">Tutti gli enti</option>
+                        </select>
+                    </div>
+                    <div class="filtro-gruppo">
                         <label for="filtro-testo">Cerca</label>
                         <input type="text" id="filtro-testo" placeholder="es. informatico, tributi..." oninput="filtra()">
                     </div>

@@ -152,8 +152,10 @@ async function caricaDati() {
     });
     STATO.errori = dati.errori || [];
     STATO.ultimaScansione = dati.ultima_scansione;
+    STATO.entiMonitorati = (dati.enti_monitorati || []).map((e) => e.ente);
 
     aggiornaIntestazione();
+    preparaFiltroEnte();
     mostraErrori();
     aggiornaStatistiche();
     filtra();
@@ -265,10 +267,77 @@ function zonaDi(b) {
     return "nazionale";
 }
 
+/* ---------------------------------------------------------- filtro ente */
+
+// "CITTA' METROPOLITANA DI SASSARI" e "Città Metropolitana di Sassari" → stessa chiave
+function chiaveEnte(nome) {
+    return (nome || "").normalize("NFD").replace(/[̀-ͯ]/g, "")
+        .toLowerCase().replace(/[’'`´"]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+// Nomi generici degli aggregatori: l'ente vero si cerca nel titolo
+// (es. "Comune di Budoni, 1 funzionario tecnico")
+const ENTI_GENERICI = new Set(["ente della sardegna"]);
+
+function enteCorrisponde(b, chiave) {
+    const propria = chiaveEnte(b.ente);
+    if (propria === chiave) return true;
+    if (!ENTI_GENERICI.has(propria)) return false;
+    return ` ${chiaveEnte(b.titolo)} `.includes(` ${chiave} `);
+}
+
+function gruppoEnte(nome) {
+    const k = chiaveEnte(nome);
+    if (k.startsWith("comune di ")) return "Comuni";
+    if (k.startsWith("unione ")) return "Unioni di comuni";
+    return "Altri enti";
+}
+
+// Etichetta corta nel menu: "Comune di Usini" → "Usini"
+function etichettaEnte(nome) {
+    return nome.replace(/^comune di\s+/i, "").replace(/^unione dei comuni\s+/i, "Unione ");
+}
+
+function preparaFiltroEnte() {
+    const select = $("filtro-ente");
+    if (!select) return;
+    const scelto = select.value;
+
+    // Tutti gli enti scansionati (anche senza bandi) + gli enti dei bandi trovati
+    const enti = new Map();   // chiave → nome da mostrare
+    for (const nome of STATO.entiMonitorati || []) enti.set(chiaveEnte(nome), nome);
+    for (const b of STATO.bandi) {
+        const k = chiaveEnte(b.ente);
+        if (k && !ENTI_GENERICI.has(k) && !enti.has(k)) enti.set(k, b.ente);
+    }
+
+    // Conteggio dei bandi visibili normalmente (esclusi archivio e scartati)
+    const visibili = STATO.bandi.filter((b) => b.sezione !== "archivio" && b.stato !== "scartato");
+    const gruppi = { "Comuni": [], "Unioni di comuni": [], "Altri enti": [] };
+    for (const [k, nome] of enti) {
+        const n = visibili.filter((b) => enteCorrisponde(b, k)).length;
+        gruppi[gruppoEnte(nome)].push({ k, nome, n });
+    }
+
+    let html = `<option value="">Tutti gli enti (${enti.size})</option>`;
+    for (const [titolo, voci] of Object.entries(gruppi)) {
+        if (!voci.length) continue;
+        voci.sort((a, b) => etichettaEnte(a.nome).localeCompare(etichettaEnte(b.nome), "it"));
+        html += `<optgroup label="${esc(titolo)} (${voci.length})">`;
+        for (const v of voci) {
+            html += `<option value="${esc(v.k)}">${esc(etichettaEnte(v.nome))} (${v.n})</option>`;
+        }
+        html += `</optgroup>`;
+    }
+    select.innerHTML = html;
+    if (scelto && enti.has(scelto)) select.value = scelto;
+}
+
 function filtra() {
     const sezione = $("filtro-sezione").value;
     const stato = $("filtro-stato").value;
     const zona = $("filtro-zona").value;
+    const ente = $("filtro-ente").value;
     const testo = $("filtro-testo").value.trim().toLowerCase();
     const minimo = Number($("filtro-punteggio").value);
     const entro = $("filtro-scadenza").value;
@@ -283,6 +352,7 @@ function filtra() {
         if (sezione === "nuovi" && !eNuovo(b)) return false;
         if (sezione && !["nuovi", "archivio"].includes(sezione) && b.sezione !== sezione) return false;
         if (zona && zonaDi(b) !== zona) return false;
+        if (ente && !enteCorrisponde(b, ente)) return false;
         if (testo && !`${b.titolo} ${b.ente} ${b.profilo || ""}`.toLowerCase().includes(testo)) return false;
         if ((b.punteggio || 0) < minimo) return false;
         if (entro) {
@@ -306,7 +376,7 @@ function aggiornaSliderpunteggio(valore) {
 }
 
 function resettaFiltri() {
-    ["filtro-sezione", "filtro-stato", "filtro-zona", "filtro-scadenza"].forEach((id) => { $(id).value = ""; });
+    ["filtro-sezione", "filtro-stato", "filtro-zona", "filtro-ente", "filtro-scadenza"].forEach((id) => { $(id).value = ""; });
     $("filtro-testo").value = "";
     $("filtro-punteggio").value = 0;
     aggiornaSliderpunteggio(0);

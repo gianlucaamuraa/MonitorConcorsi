@@ -79,6 +79,8 @@ PROFILI_LAUREA = [
     "psicologo", "farmacista", "biologo", "veterinario", "infermiere", "ostetrica",
     "fisioterapista", "tecnico sanitario", "assistente sociale", "educatore professionale",
     "dottore", "collaboratore professionale sanitario",
+    # ex categoria D: oggi "Area dei funzionari", serve la laurea
+    "istruttore direttivo", "istruttori direttivi", "istruttore direttivo amministrativo",
 ]
 
 
@@ -131,8 +133,11 @@ def _valuta_titolo_studio(titolo_studio: str, testo_profilo: str) -> tuple[int, 
     if laurea:
         return 0, "laurea richiesta (non compatibile)", "archivio"
 
-    prof_diploma = _trova(_RE_PROF_DIPLOMA, testo_profilo)
     prof_laurea = _trova(_RE_PROF_LAUREA, testo_profilo)
+    # Tolgo i profili da laurea prima di cercare quelli da diploma: così
+    # "assistente sociale" o "istruttore direttivo" non contano anche come
+    # "assistente" / "istruttore" (e non finiscono tra i profili misti)
+    prof_diploma = _trova(_RE_PROF_DIPLOMA, _RE_PROF_LAUREA.sub(" ", testo_profilo))
 
     if prof_diploma and not prof_laurea:
         return 26, f"profilo '{prof_diploma[0]}': diploma sufficiente", "compatibile"

@@ -3,7 +3,7 @@ core/dates.py — Lettura delle date nei formati usati dai bandi italiani
 
 Esempi gestiti:
     "2026-11-13", "2026-11-13T22:59:00Z", "13/11/2026", "13-11-2026",
-    "13.11.2026", "13 novembre 2026", "scad. 7 novembre 2026"
+    "13.11.2026", "13 novembre 2026", "13 nov 2026", "scad. 7 novembre 2026"
 """
 
 import re
@@ -18,10 +18,17 @@ MESI = {
     "novembre": 11, "dicembre": 12,
 }
 
+# Abbreviazioni usate da molti siti comunali ("28 lug 2026", "3 set. 2026")
+MESI_BREVI = {
+    "gen": 1, "feb": 2, "mar": 3, "apr": 4, "mag": 5, "giu": 6,
+    "lug": 7, "ago": 8, "sett": 9, "set": 9, "ott": 10, "nov": 11, "dic": 12,
+}
+
 _RE_ISO = re.compile(r"\b(\d{4})-(\d{2})-(\d{2})")
 _RE_NUM = re.compile(r"\b(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{4})\b")
 _RE_TESTO = re.compile(
-    r"\b(\d{1,2})(?:°|º)?\s+(" + "|".join(MESI) + r")\s+(\d{4})\b", re.IGNORECASE
+    r"\b(\d{1,2})(?:°|º)?\s+(" + "|".join(list(MESI) + list(MESI_BREVI)) + r")\.?\s+(\d{4})\b",
+    re.IGNORECASE,
 )
 
 
@@ -57,7 +64,8 @@ def parse_data(testo: str | None) -> date | None:
         return _crea(int(m[3]), int(m[2]), int(m[1]))
     m = _RE_TESTO.search(testo)
     if m:
-        return _crea(int(m[3]), MESI[m[2].lower()], int(m[1]))
+        mese = m[2].lower()
+        return _crea(int(m[3]), MESI.get(mese) or MESI_BREVI[mese], int(m[1]))
     return None
 
 
@@ -103,6 +111,24 @@ def estrai_scadenza(testo: str | None) -> date | None:
         if pubblicazione:
             return pubblicazione + timedelta(days=int(m.group(1)))
     return None
+
+
+def data_piu_recente(testo: str | None) -> date | None:
+    """Data più recente (non futura) citata nel testo, es. nel nome di un allegato
+    "DET._1075_del_16.09.2026.pdf". Serve a capire quanto è vecchia una pagina."""
+    if not testo:
+        return None
+    trovate = []
+    for m in _RE_ISO.finditer(testo):
+        trovate.append(_crea(int(m[1]), int(m[2]), int(m[3])))
+    for m in _RE_NUM.finditer(testo):
+        trovate.append(_crea(int(m[3]), int(m[2]), int(m[1])))
+    for m in _RE_TESTO.finditer(testo):
+        mese = m[2].lower()
+        trovate.append(_crea(int(m[3]), MESI.get(mese) or MESI_BREVI[mese], int(m[1])))
+    oggi_ = oggi()
+    valide = [d for d in trovate if d and d.year >= 2000 and d <= oggi_]
+    return max(valide) if valide else None
 
 
 def a_iso(d: date | None) -> str | None:
