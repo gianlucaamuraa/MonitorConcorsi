@@ -26,6 +26,9 @@
 #              pubblicate da più di N giorni (pagine di notizie)
 #   verifica_ssl (opzionale) false se il certificato del sito è intestato male
 #   Nell'url si può scrivere {anno}: diventa l'anno in corso.
+#   via_italia (opzionale) true per i siti che rifiutano i collegamenti
+#              dall'estero: su GitHub passano da Tailscale (uscita dal
+#              cellulare in Italia); sul PC il collegamento resta diretto.
 #
 # Tipo "rss": url del feed, più ente/sede come sopra.
 #
@@ -101,6 +104,7 @@ fonti:
   # Piattaforma Halley: tabella "Bandi di concorso - In corso" con la scadenza
   # su ogni riga. La tabella tiene anche bandi scaduti: li scarta il programma.
   - nome: ardara
+    via_italia: true
     tipo: html
     url: "https://egov5.halleysardegna.com/ardara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Ardara"
@@ -108,6 +112,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: banari
+    via_italia: true
     tipo: html
     url: "https://sol.comune.banari.ss.it/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Banari"
@@ -115,6 +120,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: borutta
+    via_italia: true
     tipo: html
     url: "https://egov.halleysardegna.com/borutta/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Borutta"
@@ -122,6 +128,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: bulzi
+    via_italia: true
     tipo: html
     url: "https://sol.comune.bulzi.ss.it/bulzi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Bulzi"
@@ -129,6 +136,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: castelsardo
+    via_italia: true
     tipo: html
     url: "https://sol.comune.castelsardo.ss.it/castelsardo/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Castelsardo"
@@ -137,6 +145,7 @@ fonti:
     verifica_ssl: false        # certificato intestato a un altro indirizzo
 
   - nome: chiaramonti
+    via_italia: true
     tipo: html
     url: "https://egov7.halleysardegna.com/chiaramonti/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Chiaramonti"
@@ -144,6 +153,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: giave
+    via_italia: true
     tipo: html
     url: "https://sac2-hs.halleysac.it/giave/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Giave"
@@ -151,6 +161,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: laerru
+    via_italia: true
     tipo: html
     url: "https://egov.halleysardegna.com/laerru/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Laerru"
@@ -158,6 +169,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: mara
+    via_italia: true
     tipo: html
     url: "https://sac2-hs.halleysac.it/mara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Mara"
@@ -165,6 +177,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: martis
+    via_italia: true
     tipo: html
     url: "https://servizi.comune.martis.ss.it/martis/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Martis"
@@ -172,6 +185,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: muros
+    via_italia: true
     tipo: html
     url: "https://sol.comune.muros.ss.it/muros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Muros"
@@ -179,6 +193,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: ossi
+    via_italia: true
     tipo: html
     url: "https://sol.comune.ossi.ss.it/ossi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Ossi"
@@ -186,6 +201,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: ploaghe
+    via_italia: true
     tipo: html
     url: "https://egov7.halleysardegna.com/ploaghe/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Ploaghe"
@@ -193,6 +209,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: pozzomaggiore
+    via_italia: true
     tipo: html
     url: "https://egov.halleysardegna.com/pozzomaggiore/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Pozzomaggiore"
@@ -200,6 +217,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: sedini
+    via_italia: true
     tipo: html
     url: "https://sac2-hs.halleysac.it/sedini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Sedini"
@@ -207,6 +225,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: thiesi
+    via_italia: true
     tipo: html
     url: "https://egov5.halleysardegna.com/thiesi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Thiesi"
@@ -214,6 +233,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: torralba
+    via_italia: true
     tipo: html
     url: "https://egov.halleysardegna.com/torralba/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Torralba"
@@ -221,6 +241,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: uri
+    via_italia: true
     tipo: html
     url: "https://egov.halleysardegna.com/uri/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Uri"
@@ -228,6 +249,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: usini
+    via_italia: true
     tipo: html
     url: "https://sac2-hs.halleysac.it/usini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Comune di Usini"
@@ -235,6 +257,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: unione_coros
+    via_italia: true
     tipo: html
     url: "https://sol.unionecoros.it/udccoros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Unione dei Comuni del Coros"
@@ -242,6 +265,7 @@ fonti:
     blocco: "table tbody tr"
 
   - nome: unione_logudoro
+    via_italia: true
     tipo: html
     url: "https://egov4.halleysardegna.com/udclogudoro/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso"
     ente: "Unione dei Comuni del Logudoro"
@@ -495,6 +519,7 @@ fonti:
     sede: "Nazionale"
 
   - nome: mit_attivi
+    via_italia: true
     tipo: html
     url: "https://trasparenza.mit.gov.it/pagina640_concorsi-attivi.html"
     ente: "Ministero delle Infrastrutture e dei Trasporti"
