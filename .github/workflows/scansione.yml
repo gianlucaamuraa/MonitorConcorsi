@@ -46,11 +46,16 @@ jobs:
         run: |
           if [ -z "$TS_AUTHKEY" ]; then echo "Secret TS_AUTHKEY mancante"; exit 1; fi
           curl -fsSL https://tailscale.com/install.sh | sh
+          # L'installazione avvia il servizio normale, che devierebbe tutta la
+          # rete del server: lo fermo e avvio quello che offre solo il proxy.
+          sudo systemctl stop tailscaled || true
+          sudo systemctl disable tailscaled || true
           sudo nohup tailscaled --tun=userspace-networking --state=mem: \
             --outbound-http-proxy-listen=localhost:1056 > /tmp/tailscaled.log 2>&1 &
           sleep 5
-          sudo tailscale up --authkey="$TS_AUTHKEY" --hostname=github-scansione \
-            --exit-node="$TS_EXIT_NODE" --timeout=60s
+          sudo tailscale up --authkey="$TS_AUTHKEY" --hostname=github-scansione --timeout=60s
+          # Il nome dell'iPhone si risolve solo a collegamento avvenuto
+          sudo tailscale set --exit-node="$TS_EXIT_NODE"
           sudo tailscale status
           # Prova: da dove esce il proxy? (loc=IT se passa dall'iPhone)
           paese=$(curl -s --max-time 30 -x http://localhost:1056 \
