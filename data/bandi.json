@@ -1,6 +1,6 @@
 {
- "generato": "2026-10-25T18:17:49",
- "ultima_scansione": "2026-10-25T18:17:49.011143",
+ "generato": "2026-10-26T17:37:21",
+ "ultima_scansione": "2026-10-26T17:37:21.174936",
  "bandi": [
   {
    "id": "3b30cc053c2dddfb",
@@ -14,17 +14,19 @@
    "scadenza": "2026-11-04",
    "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=539abe8122844004a1eddf23e623e2d9",
    "fonti": [
-    "inpa"
+    "inpa",
+    "stintino"
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 84,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 10 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 9 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-05"
   },
   {
    "id": "2798e7db8872bfe3",
@@ -42,13 +44,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 81,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 15/20 (scade tra 9 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 15/20 (scade tra 8 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-14"
   },
   {
    "id": "f76c48917da69b63",
@@ -66,13 +69,64 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 81,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 15/20 (scade tra 9 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 15/20 (scade tra 8 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "d07ea2ada4167a67",
+   "ente": "Ente della Sardegna",
+   "titolo": "istruttore amministrativo contabile",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-03",
+   "link_ufficiale": "https://www.concorsipubblici.com/concorsi/occupazione/pro/istruttore-amministrativo-contabile-334",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 81,
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 15/20 (scade tra 8 giorni)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "914f117aa3bce9b7",
+   "ente": "Ente della Sardegna",
+   "titolo": "Comune di Stintino, 1 istruttore amministrativo",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://www.concorsipubblici.com/comune-di-stintino-concorso-istruttore-amministrativo-sassari-2026",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 79,
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "755afe4a43612c89",
@@ -90,13 +144,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 74,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 25/25 (ambito molto pertinente (amministrativo, contabile)) | Scadenza: 8/20 (scade tra 4 giorni — URGENTE)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-20"
   },
   {
    "id": "d6daf2e75f859972",
@@ -114,13 +169,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 74,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 10 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 9 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ed6d0fd24dc9477e",
@@ -138,13 +194,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 74,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'assistente': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 12 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'assistente': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 15/20 (scade tra 11 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-07"
   },
   {
    "id": "6fef7e00b1cdb81c",
@@ -162,13 +219,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 74,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (informatico)) | Scadenza: 15/20 (scade tra 26 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (informatico)) | Scadenza: 15/20 (scade tra 25 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "97700db3423a0df0",
@@ -186,13 +244,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 69,
    "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-24"
   },
   {
    "id": "faa552271bb4990c",
@@ -210,13 +269,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 69,
    "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "5a171560601ae60a",
@@ -235,13 +295,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 69,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 27 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 26 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
   },
   {
    "id": "3f7ee07e2f6de1eb",
@@ -259,13 +320,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 67,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'area degli istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'area degli istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 8/20 (scade tra 0 giorni — URGENTE)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-16"
   },
   {
    "id": "ba788ba2e7d5173c",
@@ -283,13 +345,39 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 66,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sassari o area vicina) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sassari o area vicina) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 8/20 (scade tra 0 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-06"
+  },
+  {
+   "id": "5657e90857291f1b",
+   "ente": "Comune di Cargeghe",
+   "titolo": "Avviso di interpello per n. 1 posto di Istruttore tecnico a tempo indeterminato, part-time 18 ore settimanali, presso il Comune di Cargeghe",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Cargeghe (provincia di Sassari)",
+   "scadenza": null,
+   "link_ufficiale": "https://comune.cargeghe.ss.it/notizie/3661947/avviso-interpello-n-1-posto-istruttore-tecnico",
+   "fonti": [
+    "cargeghe"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 64,
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "compatibile",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-12"
   },
   {
    "id": "6a8d61cac89090a9",
@@ -307,61 +395,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 64,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore': diploma sufficiente) | Zona: 0/25 (sede fuori Sardegna (nazionale (7 regioni))) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 20/20 (scade tra 67 giorni (ampio margine))",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore': diploma sufficiente) | Zona: 0/25 (sede fuori Sardegna (nazionale (7 regioni))) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 20/20 (scade tra 66 giorni (ampio margine))",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
-  },
-  {
-   "id": "f6d0427ce7427ccd",
-   "ente": "Consorzio Ausi - Consorzio per La Promozione Delle Attivita' Universitarie del Sulcis-iglesiente",
-   "titolo": "AVVISO PUBBLICO DI SELEZIONE DI PERSONALE, PER TITOLI E COLLOQUIO, PER L’ASSUNZIONE DI NR. 1 ADDETTO AI SERVIZI DI SEGRETERIA, TIROCINIO UNIVERSITARIO E BIBLIOTECA A TEMPO PARZIALE E INDETERMINATO AI SENSI DEL CCNL COMMERCIO E SERVIZI (CONFCOMMERCIO).",
-   "profilo": "ADDETTO AI SERVIZI DI SEGRETERIA, TIROCINIO UNIVERSITARIO E BIBLIOTECA",
-   "livello": "Concorso",
-   "n_posti": 1,
-   "titolo_studio": null,
-   "sede": "Sardegna, Sud Sardegna",
-   "scadenza": "2026-11-02",
-   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=0ab64ad5dbb647f099b05da3d754b714",
-   "fonti": [
-    "inpa"
-   ],
-   "solo_fonte_secondaria": 0,
-   "prima_rilevazione": "2026-10-24T23:50:53",
-   "ultima_verifica": "2026-10-25T18:14:46",
-   "punteggio": 63,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (segreteria)) | Scadenza: 15/20 (scade tra 8 giorni)",
-   "sezione": "da_verificare",
-   "stato": "da_vedere",
-   "note": null,
-   "attivo": 1
-  },
-  {
-   "id": "c6fbddd15b531e29",
-   "ente": "Ente della Sardegna",
-   "titolo": "Selezione: personale, per titoli e colloquio, per l’assunzione di nr. 1 addetto… (ai servizi di segreteria)",
-   "profilo": null,
-   "livello": null,
-   "n_posti": null,
-   "titolo_studio": null,
-   "sede": "Sardegna",
-   "scadenza": "2026-11-02",
-   "link_ufficiale": "https://ossian.cloud/concorsi/concorso/0ab64ad5dbb647f099b05da3d754b714.html",
-   "fonti": [
-    "ossian"
-   ],
-   "solo_fonte_secondaria": 1,
-   "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
-   "punteggio": 63,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (segreteria)) | Scadenza: 15/20 (scade tra 8 giorni)",
-   "sezione": "da_verificare",
-   "stato": "da_vedere",
-   "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-04-28"
   },
   {
    "id": "c78f36af5c9f8dde",
@@ -379,13 +420,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 59,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore esperto': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 15 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore esperto': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 14 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-15"
   },
   {
    "id": "4bf50dc3fcbd0f5c",
@@ -403,13 +445,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 59,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'area degli istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 15 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'area degli istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 14 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-09"
   },
   {
    "id": "a59481d62b4eddf6",
@@ -427,13 +470,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 59,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 15 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 14 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "01999f5ecee00b6a",
@@ -451,13 +495,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 59,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 17 giorni)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
   },
   {
    "id": "9f218f1408718d62",
@@ -475,13 +520,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 59,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 17 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "8dab5fad1cfb45d5",
@@ -499,13 +545,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:53",
-   "ultima_verifica": "2026-10-25T18:17:49",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 59,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 27 giorni)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 26 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "344e21c897ca6f69",
@@ -523,13 +570,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 58,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 13 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 12 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
   },
   {
    "id": "b4fd996f98f64594",
@@ -547,13 +595,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 58,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 5/25 (sede non specificata o nazionale) | Ambito: 18/25 (ambito pertinente (informatica)) | Scadenza: 20/20 (scade tra 367 giorni (ampio margine))",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 5/25 (sede non specificata o nazionale) | Ambito: 18/25 (ambito pertinente (informatica)) | Scadenza: 20/20 (scade tra 366 giorni (ampio margine))",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2024-09-27"
   },
   {
    "id": "21f1234b31dd57bc",
@@ -571,13 +620,64 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 56,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (amministrativo)) | Scadenza: 8/20 (scade tra 0 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "f6d0427ce7427ccd",
+   "ente": "Consorzio Ausi - Consorzio per La Promozione Delle Attivita' Universitarie del Sulcis-iglesiente",
+   "titolo": "AVVISO PUBBLICO DI SELEZIONE DI PERSONALE, PER TITOLI E COLLOQUIO, PER L’ASSUNZIONE DI NR. 1 ADDETTO AI SERVIZI DI SEGRETERIA, TIROCINIO UNIVERSITARIO E BIBLIOTECA A TEMPO PARZIALE E INDETERMINATO AI SENSI DEL CCNL COMMERCIO E SERVIZI (CONFCOMMERCIO).",
+   "profilo": "ADDETTO AI SERVIZI DI SEGRETERIA, TIROCINIO UNIVERSITARIO E BIBLIOTECA",
+   "livello": "Concorso",
+   "n_posti": 1,
+   "titolo_studio": null,
+   "sede": "Sardegna, Sud Sardegna",
+   "scadenza": "2026-11-02",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=0ab64ad5dbb647f099b05da3d754b714",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-24T23:50:53",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 56,
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (segreteria)) | Scadenza: 8/20 (scade tra 7 giorni — URGENTE)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
+  },
+  {
+   "id": "c6fbddd15b531e29",
+   "ente": "Ente della Sardegna",
+   "titolo": "Selezione: personale, per titoli e colloquio, per l’assunzione di nr. 1 addetto… (ai servizi di segreteria)",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-02",
+   "link_ufficiale": "https://ossian.cloud/concorsi/concorso/0ab64ad5dbb647f099b05da3d754b714.html",
+   "fonti": [
+    "ossian"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-25T00:23:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 56,
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 18/25 (ambito pertinente (segreteria)) | Scadenza: 8/20 (scade tra 7 giorni — URGENTE)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "1b8a9c203d572c88",
@@ -595,13 +695,89 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 54,
    "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-24"
+  },
+  {
+   "id": "ec8670d8456b40bb",
+   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
+   "titolo": "Avviso pubblico rivolto al personale dipendente delle pubbliche amministrazioni di cui all’art. 1, comma 2, D.Lgs. 165/2001 e non appartenente al sistema Regione della Sardegna, finalizzato all’acquisizione di manifestazioni di interesse per la copertura di n. 46 unità di personale di cat. C e D da",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&v=9&c=93502&c1=4920&id=117550&tipoconc=1",
+   "fonti": [
+    "aspal_concorsi"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 54,
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'cat. c': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "compatibile",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-08-11"
+  },
+  {
+   "id": "cd0bb97ff149a3f6",
+   "ente": "Ente della Sardegna",
+   "titolo": "Città Metropolitana di Cagliari, 4 istruttori tecnici",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://www.concorsipubblici.com/citta-metropolitana-di-cagliari-concorso-istruttore-tecnico-cagliari-2026",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 54,
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttori': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "57d0fb51c23c434a",
+   "ente": "Ente della Sardegna",
+   "titolo": "Comune di La Maddalena, 1 istruttore tecnico geometra",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://www.concorsipubblici.com/comune-di-la-maddalena-concorso-istruttore-tecnico-geometra-gallura-nord-est-sardegna-2026-0",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 54,
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "59c7ad8421abd431",
@@ -619,13 +795,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:29",
-   "ultima_verifica": "2026-10-25T00:23:29",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 53,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "bcc9c563cb111401",
@@ -643,13 +820,39 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 53,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 20/20 (scade tra 37 giorni (ampio margine))",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 20/20 (scade tra 36 giorni (ampio margine))",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
+  },
+  {
+   "id": "e43b530bbfb64e06",
+   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
+   "titolo": "ART. 16, L. 56/87 - ERSU CAGLIARI - APPROVAZIONE AVVISO PUBBLICO DI AVVIAMENTO A SELEZIONE PER L’ASSUNZIONE A TEMPO INDETERMINATO E PIENO DI N. 1 UNITÀ CON LA QUALIFICA DI ADDETTI AGLI AFFARI GENERALI",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-12-04",
+   "link_ufficiale": "https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=118063&tipoconc=2",
+   "fonti": [
+    "aspal_art16"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 53,
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 20/20 (scade tra 39 giorni (ampio margine))",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
   },
   {
    "id": "855603e517d5bc84",
@@ -667,13 +870,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 53,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 20/20 (scade tra 605 giorni (ampio margine))",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 20/20 (scade tra 604 giorni (ampio margine))",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-06-06"
   },
   {
    "id": "5e5141a32b858591",
@@ -691,13 +895,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 52,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 3 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 2 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "4db0c23d20febc5a",
@@ -715,13 +920,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 52,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'istruttore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 4 giorni — URGENTE)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-13"
   },
   {
    "id": "79f3defad64ca070",
@@ -739,13 +945,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 52,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 4 giorni — URGENTE)",
    "sezione": "compatibile",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-13"
   },
   {
    "id": "f286537c220180da",
@@ -763,37 +970,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 52,
-   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore esperto': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 26/30 (profilo 'operatore esperto': diploma sufficiente) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 4 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
-  },
-  {
-   "id": "3360016a8187aeef",
-   "ente": "Comune di Palau",
-   "titolo": "APPROVAZIONE SCHEMA AVVISO PROCEDURA DI INTERPELLO A SEGUITO DI ACCORDO PER LA GESTIONE ASSOCIATA DELLA FORMAZIONE DI ELENCHI DI IDONEI PER LE ASSUNZIONI DI PERSONALE DI CUI ALL’ARTICOLO 3 BIS DEL D.L. N. 80/2021 – N.1 FUNZIONARIO TECNICO (AREA DEI FUNZIONARI E DELL’ELEVATA QUALIFICAZIONE) EX PROFILO DI ISTRUTTORE DIRETTIVO TECNICO CAT.D1",
-   "profilo": "Funzionario tecnico",
-   "livello": "Concorso",
-   "n_posti": 1,
-   "titolo_studio": null,
-   "sede": "Sardegna, Sassari",
-   "scadenza": "2026-10-27",
-   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=200a36366c304a559a737107ed936141",
-   "fonti": [
-    "inpa"
-   ],
-   "solo_fonte_secondaria": 0,
-   "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
-   "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 12/30 (profili misti (diploma e laurea): verificare il bando) | Zona: 25/25 (Sassari o area vicina) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 2 giorni — URGENTE)",
-   "sezione": "da_verificare",
-   "stato": "da_vedere",
-   "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "8023c8ac311b6619",
@@ -811,13 +995,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 12 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 11 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-16"
   },
   {
    "id": "9b77e7e999cf18fa",
@@ -835,13 +1020,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 13 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 12 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "45bbdfc1126d1cca",
@@ -861,11 +1047,12 @@
    "prima_rilevazione": "2026-10-25T00:23:52",
    "ultima_verifica": "2026-10-25T18:17:47",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 15 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 14 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "f3f3da20d62ab693",
@@ -883,13 +1070,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 17 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 16 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-12"
   },
   {
    "id": "6ca8d9b3120ba5e2",
@@ -907,13 +1095,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 17 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "68339c15475ac969",
@@ -931,13 +1120,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:53",
-   "ultima_verifica": "2026-10-25T18:17:49",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 17 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "7327d6dbe33e8969",
@@ -955,13 +1145,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 19 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 18 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ddec24eb07e1a069",
@@ -979,13 +1170,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 48,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 21 giorni)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 15/20 (scade tra 20 giorni)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-15"
   },
   {
    "id": "8112f61f3a0c322c",
@@ -1003,13 +1195,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 43,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "4b5edbe98c2db0e7",
@@ -1027,13 +1220,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 43,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "3cac0fd5469ac8ba",
@@ -1051,13 +1245,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 43,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "c5b428399120548d",
@@ -1075,37 +1270,89 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:34",
-   "ultima_verifica": "2026-10-25T18:15:04",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 43,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
-   "id": "d1be2ca1d961c49c",
-   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
-   "titolo": "ART. 16, L. 56/87 – ARNAS G. BROTZU - APPROVAZIONE AVVISO PUBBLICO DI AVVIAMENTO A SELEZIONE PER L’ASSUNZIONE A TEMPO INDETERMINATO E PIENO DI N. 8 UNITÀ CON QUALIFICHE VARIE",
+   "id": "79a640a9e45e211c",
+   "ente": "Abbanoa",
+   "titolo": "“n. 2 – Addetti/Addette amministrazione del personale” - RIF. 12/26",
    "profilo": null,
    "livello": null,
    "n_posti": null,
    "titolo_studio": null,
    "sede": "Sardegna",
-   "scadenza": "2026-10-25",
-   "link_ufficiale": "https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&v=9&c=93504&c1=4920&id=117454&tipoconc=2",
+   "scadenza": null,
+   "link_ufficiale": "https://abbanoa.intervieweb.it/app.php?opmode=guest&module=iframeAnnunci&act1=1&IdAnnuncio=21&view=list&k=3e4ae650fea2042033104c8a854d2c65&defgroup=date&gnavenable=1&desc=1&typeView=large&h=&d=www.abbanoa.it&lang=it",
    "fonti": [
-    "aspal_art16"
+    "abbanoa_aperte"
    ],
    "solo_fonte_secondaria": 0,
-   "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
-   "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 0 giorni — URGENTE)",
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 43,
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "1282048d087a0d0d",
+   "ente": "Abbanoa",
+   "titolo": "N. 1 Guardiadighe - RIF. 11/26",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://abbanoa.intervieweb.it/app.php?opmode=guest&module=iframeAnnunci&act1=1&IdAnnuncio=20&view=list&k=3e4ae650fea2042033104c8a854d2c65&defgroup=date&gnavenable=1&desc=1&typeView=large&h=&d=www.abbanoa.it&lang=it",
+   "fonti": [
+    "abbanoa_aperte"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 43,
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "e26ab9cd7fa73362",
+   "ente": "Abbanoa",
+   "titolo": "N. 4 Addetti/e operazione alla clientela - RIF. 10/26",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://abbanoa.intervieweb.it/app.php?opmode=guest&module=iframeAnnunci&act1=1&IdAnnuncio=19&view=list&k=3e4ae650fea2042033104c8a854d2c65&defgroup=date&gnavenable=1&desc=1&typeView=large&h=&d=www.abbanoa.it&lang=it",
+   "fonti": [
+    "abbanoa_aperte"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 43,
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
+   "sezione": "da_verificare",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "2b5c2a3c8b74ac33",
@@ -1123,13 +1370,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 0 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "8337b29b471e8396",
@@ -1147,13 +1395,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 2 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 1 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "cf5de04774d21a17",
@@ -1171,13 +1420,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:53",
-   "ultima_verifica": "2026-10-25T18:17:49",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 3 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 2 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "e0aca2704eb0ec48",
@@ -1195,13 +1445,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 4 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
   },
   {
    "id": "99e22bb34e245bd7",
@@ -1219,13 +1470,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 4 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "b4eb89b151d3dfd4",
@@ -1243,13 +1495,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:33",
-   "ultima_verifica": "2026-10-25T18:15:02",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 41,
-   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 6 giorni — URGENTE)",
+   "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 15/25 (altra sede in Sardegna) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 8/20 (scade tra 5 giorni — URGENTE)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-21"
   },
   {
    "id": "fa7b036a944477d5",
@@ -1267,13 +1520,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:49",
-   "ultima_verifica": "2026-10-25T18:15:14",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 33,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 5/25 (sede non specificata o nazionale) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "2c53d8a05d8871d9",
@@ -1291,13 +1545,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:49",
-   "ultima_verifica": "2026-10-25T18:15:14",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 33,
    "motivo_punteggio": "Titolo studio: 15/30 (titolo di studio non specificato) | Zona: 5/25 (sede non specificata o nazionale) | Ambito: 3/25 (ambito non specificato o non pertinente) | Scadenza: 10/20 (scadenza non specificata)",
    "sezione": "da_verificare",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "018e7ebb90271cfa",
@@ -1315,13 +1570,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-21"
   },
   {
    "id": "b94e2405cfca2b98",
@@ -1339,13 +1595,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-10"
   },
   {
    "id": "a8b57e2e0871a875",
@@ -1363,13 +1620,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-03"
   },
   {
    "id": "98d306294ca8af37",
@@ -1387,85 +1645,164 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:23",
-   "ultima_verifica": "2026-10-25T18:14:53",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'area dei funzionari': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
-   "id": "234223c6a9e9df66",
-   "ente": "Comune di Cabras",
-   "titolo": "BANDO PUBBLICO DI SELEZIONE PER L’ INCARICO DI DIRETTORE ARTISTICO DELLA SCUOLA CIVICA DI MUSICA INTERCOMUNALE “PIU’ MUSICA”",
-   "profilo": "Direttore artistico della scuola civica di musica intercomunale “Più Musica”.",
-   "livello": "Selezione Professionisti ed Esperti",
-   "n_posti": 1,
-   "titolo_studio": null,
-   "sede": "Sardegna, Oristano",
-   "scadenza": "2026-10-25",
-   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=d015dc7f7c7c40f498a4e9651efdbdab",
-   "fonti": [
-    "inpa"
-   ],
-   "solo_fonte_secondaria": 0,
-   "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
-   "punteggio": 0,
-   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'direttore': di norma richiede laurea)",
-   "sezione": "archivio",
-   "stato": "da_vedere",
-   "note": null,
-   "attivo": 1
-  },
-  {
-   "id": "eb212e9a71aa93e7",
-   "ente": "AZIENDA REGIONALE DELLA SALUTE REGIONE SARDEGNA",
-   "titolo": "Mobilità Esterna Volontaria ex art. 30 D. Lgs. n. 165/2001 a carattere regionale ed interregionale tra aziende ed enti del comparto del SSN, per titoli ed eventuale colloquio, per la copertura di n. 1 posto di Collaboratore Tecnico Professionale - Ingegnere Civile - Area dei Professionisti della Sal",
+   "id": "b3628e84c27c4959",
+   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
+   "titolo": "Avviso di selezione per le progressioni verticali ordinarie tra le categorie - progressioni professionali ordinarie dalla categoria B alla categoria C per n. 29 posti.",
    "profilo": null,
    "livello": null,
    "n_posti": null,
    "titolo_studio": null,
    "sede": "Sardegna",
-   "scadenza": "2026-10-25",
-   "link_ufficiale": "https://www.aressardegna.it/ap/mobilita-esterna-volontaria-ex-art-30-d-lgs-n-165-2001-n-1-posto-collaboratore-tecnico-professionale-ingegnere-civile-aou-cagliari-2512/",
+   "scadenza": null,
+   "link_ufficiale": "https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&v=9&c=93502&c1=4920&id=117562&tipoconc=1",
    "fonti": [
-    "comune_sassari_regionali"
+    "aspal_concorsi"
    ],
    "solo_fonte_secondaria": 0,
-   "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
-   "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
+   "motivo_punteggio": "Riservato a dipendenti pubblici ('progressioni verticali')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-08-12"
   },
   {
-   "id": "c74559f9089c3577",
+   "id": "6028fcb44a4b3868",
+   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
+   "titolo": "AVVISO PER L’ACQUISIZIONE DI MANIFESTAZIONI DI INTERESSE PER LA COPERTURA DI N. 6 POSIZIONI DIRIGENZIALI DELL’AGENZIA SARDA PER LE POLITICHE ATTIVE DEL LAVORO (ASPAL) RIVOLTO AL PERSONALE DIRIGENTE IN SERVIZIO E A TEMPO INDETERMINATO, APPARTENENTE AL SISTEMA REGIONE",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&v=9&c=93502&c1=4920&id=117403&tipoconc=1",
+   "fonti": [
+    "aspal_concorsi"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-07-23"
+  },
+  {
+   "id": "1e0b9bb5378b945a",
+   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
+   "titolo": "Concorso per titoli ed esami per l’assunzione a tempo indeterminato presso l’ASPAL di n. 1 dirigente nell’ambito delle politiche del lavoro – declinazione “Direttore del Servizio Sistema Integrato del Lavoro",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://agenziaregionaleperillavoro.regione.sardegna.it/j/v/2362?s=44&v=9&c=93502&c1=4920&id=116602&tipoconc=1",
+   "fonti": [
+    "aspal_concorsi"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-04-28"
+  },
+  {
+   "id": "ee1ce97604dc9daa",
    "ente": "Ente della Sardegna",
-   "titolo": "Selezione: l’ incarico di direttore artistico della scuola civica di musica intercomunale “più musica”",
+   "titolo": "Comune di Budoni, 1 funzionario tecnico",
    "profilo": null,
    "livello": null,
    "n_posti": null,
    "titolo_studio": null,
    "sede": "Sardegna",
-   "scadenza": "2026-10-25",
-   "link_ufficiale": "https://ossian.cloud/concorsi/concorso/d015dc7f7c7c40f498a4e9651efdbdab.html",
+   "scadenza": null,
+   "link_ufficiale": "https://www.concorsipubblici.com/comune-di-budoni-concorso-funzionario-tecnico-gallura-nord-est-sardegna-2026",
    "fonti": [
-    "ossian"
+    "concorsipubblici"
    ],
    "solo_fonte_secondaria": 1,
-   "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
-   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'direttore': di norma richiede laurea)",
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "99d52bac99ca1b50",
+   "ente": "Ente della Sardegna",
+   "titolo": "Unione Comuni D’Ogliastra, 1 funzionario socio pedagocico",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://www.concorsipubblici.com/unione-comuni-dogliastra-di-elini-concorso-istruttore-direttivo-socio-pedagogico-ogliastra-2026",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "cfec64686d46c9ca",
+   "ente": "Ente della Sardegna",
+   "titolo": "Comune di La Maddalena, 1 funzionario amministrativo",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": null,
+   "link_ufficiale": "https://www.concorsipubblici.com/comune-di-la-maddalena-concorso-funzionario-tecnico-gallura-nord-est-sardegna-2026",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "0cc43b9a2fa9f276",
@@ -1489,7 +1826,8 @@
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "31cb6e8468e74a34",
@@ -1513,7 +1851,33 @@
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "3360016a8187aeef",
+   "ente": "Comune di Palau",
+   "titolo": "APPROVAZIONE SCHEMA AVVISO PROCEDURA DI INTERPELLO A SEGUITO DI ACCORDO PER LA GESTIONE ASSOCIATA DELLA FORMAZIONE DI ELENCHI DI IDONEI PER LE ASSUNZIONI DI PERSONALE DI CUI ALL’ARTICOLO 3 BIS DEL D.L. N. 80/2021 – N.1 FUNZIONARIO TECNICO (AREA DEI FUNZIONARI E DELL’ELEVATA QUALIFICAZIONE) EX PROFILO DI ISTRUTTORE DIRETTIVO TECNICO CAT.D1",
+   "profilo": "Funzionario tecnico",
+   "livello": "Concorso",
+   "n_posti": 1,
+   "titolo_studio": null,
+   "sede": "Sardegna, Sassari",
+   "scadenza": "2026-10-27",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=200a36366c304a559a737107ed936141",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-24T23:50:54",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-13"
   },
   {
    "id": "9e7c547260c03549",
@@ -1531,13 +1895,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-08"
   },
   {
    "id": "67c006599c37fae2",
@@ -1555,13 +1920,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ba233feaeb04756f",
@@ -1579,13 +1945,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita' volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-29"
   },
   {
    "id": "b61543cefecf490b",
@@ -1603,13 +1970,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-29"
   },
   {
    "id": "c43d5de59764089c",
@@ -1627,13 +1995,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:22",
-   "ultima_verifica": "2026-10-25T18:14:52",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-28"
   },
   {
    "id": "1839d51a1e3d7448",
@@ -1647,17 +2016,19 @@
    "scadenza": "2026-10-28",
    "link_ufficiale": "https://ossian.cloud/concorsi/concorso/dc77f8acb4f340019edbaf2524fb3a6d.html",
    "fonti": [
-    "ossian"
+    "ossian",
+    "concorsipubblici"
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:51",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "467df001ddc63695",
@@ -1675,13 +2046,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-14"
   },
   {
    "id": "e5712def326e55ea",
@@ -1699,13 +2071,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-30"
   },
   {
    "id": "fd7ce391ba04e89d",
@@ -1723,13 +2096,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-09-28"
   },
   {
    "id": "84645e5455fa02c4",
@@ -1747,13 +2121,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "8fda8fc10999fee9",
@@ -1771,13 +2146,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ccad2305b5927d4d",
@@ -1795,13 +2171,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "4c927134f38d5686",
@@ -1825,7 +2202,83 @@
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "01ca868b7ab79e2d",
+   "ente": "Ente della Sardegna",
+   "titolo": "Concorso: n. 1 posto di funzionario amministrativo-contabile a tempo pieno e indeterminato – Unione dei Comuni…",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-10-29",
+   "link_ufficiale": "https://ossian.cloud/concorsi/concorso/e991d75382af4e08b7add5a53133624d.html",
+   "fonti": [
+    "ossian"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "da9e490eef891af1",
+   "ente": "Ente della Sardegna",
+   "titolo": "istruttore direttivo socio pedagogico",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-10-29",
+   "link_ufficiale": "https://www.concorsipubblici.com/concorsi/occupazione/pro/istruttore-direttivo-socio-pedagogico-1181",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'istruttore direttivo': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "dd15527bf6438461",
+   "ente": "Ente della Sardegna",
+   "titolo": "Unione Dei Comuni del Sarrabus, 1 funzionario amministrativo contabile",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-10-29",
+   "link_ufficiale": "https://www.concorsipubblici.com/unione-dei-comuni-del-sarrabus-concorso-funzionario-amministrativo-contabile-cagliari-2026",
+   "fonti": [
+    "concorsipubblici"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:21",
+   "ultima_verifica": "2026-10-26T17:37:21",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "c2a4a18c35238b89",
@@ -1844,13 +2297,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-02"
   },
   {
    "id": "29e8930028ce236a",
@@ -1868,13 +2322,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita' esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-01"
   },
   {
    "id": "4af87a6b0ea6cd5a",
@@ -1892,13 +2347,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "67b4f9cf630a3e4b",
@@ -1916,13 +2372,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "12291295fc84e78f",
@@ -1941,13 +2398,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-06"
   },
   {
    "id": "0b3093a39635f1b6",
@@ -1965,13 +2423,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-19"
   },
   {
    "id": "4d103e449e20a025",
@@ -1990,13 +2449,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-07"
   },
   {
    "id": "e5c39a4e000454ac",
@@ -2014,13 +2474,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-06"
   },
   {
    "id": "28667f98da74eeb8",
@@ -2038,13 +2499,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-06"
   },
   {
    "id": "42030b7d4300722e",
@@ -2062,13 +2524,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-06"
   },
   {
    "id": "b0ac160389c0534a",
@@ -2086,13 +2549,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "fd1b3ddbbd30b8ce",
@@ -2110,13 +2574,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "293aee83f22fb85e",
@@ -2134,13 +2599,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "b9efe34d7157ca9c",
@@ -2158,13 +2624,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "e6b006dbbb0d74e1",
@@ -2182,13 +2649,39 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:53",
-   "ultima_verifica": "2026-10-25T18:17:49",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'direttore': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "d1b08f05eb9d6687",
+   "ente": "Comune di Oristano",
+   "titolo": "Comune di Oristano - Selezione per 1 posto di Direttore Artistico della Scuola Civica di Musica di Oristano",
+   "profilo": "Direttore Artistico",
+   "livello": "Selezione Professionisti ed Esperti",
+   "n_posti": 1,
+   "titolo_studio": null,
+   "sede": "Sardegna, Oristano",
+   "scadenza": "2026-11-06",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=61e21176034a495394c453db7da79935",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'direttore': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
   },
   {
    "id": "def2153ead4bc9b2",
@@ -2206,13 +2699,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-08"
   },
   {
    "id": "6ec073ca2de770b2",
@@ -2230,13 +2724,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-08"
   },
   {
    "id": "b96a8508215928aa",
@@ -2254,13 +2749,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "88954e3552915745",
@@ -2278,13 +2774,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ddf298dbd5422c60",
@@ -2303,13 +2800,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:53",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-09"
   },
   {
    "id": "d235d487a1106562",
@@ -2327,13 +2825,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-09"
   },
   {
    "id": "50b0051a65f6f65b",
@@ -2351,13 +2850,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-09"
   },
   {
    "id": "64a1a3422277dc3f",
@@ -2375,13 +2875,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "107c1236598e333c",
@@ -2399,13 +2900,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "2942ccc6a6e14dfd",
@@ -2423,13 +2925,64 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "1efb45ae33e159f5",
+   "ente": "Comune di Villacidro",
+   "titolo": "COMUNE DI VILLACIDRO - AVVISO DI SELEZIONE PUBBLICA PER L’ASSUNZIONE A TEMPO INDETERMINATO DI N. 1 (UNA) UNITA’ NEL PROFILO PROFESSIONALE “ISTRUTTORE DIRETTIVO SOCIO ASSISTENZIALE” CON INQUADRAMENTO NELL’AREA DEI FUNZIONARI DI CUI AL CCNL COMPARTO FUNZIONI LOCALI 16/11/2022, PRIORITARIAMENTE RISERVATO AI VOLONTARI DELLE FORZE ARMATE.",
+   "profilo": "ISTRUTTORE DIRETTIVO SOCIO ASSISTENZIALE",
+   "livello": "Concorso",
+   "n_posti": 1,
+   "titolo_studio": null,
+   "sede": "Sardegna, Sud Sardegna",
+   "scadenza": "2026-11-10",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=1837ad21a8c64cd7a814c9983f2bf0a2",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'istruttore direttivo': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
+  },
+  {
+   "id": "77af937af790e6f5",
+   "ente": "ARES Sardegna",
+   "titolo": "Selezione Pubblica, per soli titoli per l assunzione, con contratto di lavoro a tempo determinato, di Dirigenti Medici, disciplina Geriatria, da destinare alle Aziende del SSR 2845",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-10",
+   "link_ufficiale": "https://www.aressardegna.it/ap/selezione-pubblica-per-soli-titoli-per-l-assunzione-con-contratto-di-lavoro-a-tempo-determinato-di-dirigenti-medici-disciplina-geriatria-da-destinare-alle-aziende-del-ssr-2845/",
+   "fonti": [
+    "ares_sardegna"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigenti': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
   },
   {
    "id": "ceb2eb9517bbc87b",
@@ -2443,17 +2996,19 @@
    "scadenza": "2026-11-11",
    "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=130198c44eb64040a5e179f753a719d1",
    "fonti": [
-    "inpa"
+    "inpa",
+    "cossoine"
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-21"
   },
   {
    "id": "db03ac8305022d94",
@@ -2471,13 +3026,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita' volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-13"
   },
   {
    "id": "27a7f7982fd9d41a",
@@ -2496,13 +3052,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-13"
   },
   {
    "id": "fc0d732a853cea0c",
@@ -2520,13 +3077,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita’ volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-12"
   },
   {
    "id": "bfcf9193290fb505",
@@ -2544,13 +3102,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "f54b17cbf4c76346",
@@ -2568,13 +3127,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "153816c4748fc6fb",
@@ -2592,13 +3152,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "8f94943dce90b311",
@@ -2616,13 +3177,39 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:53",
-   "ultima_verifica": "2026-10-25T18:17:49",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'medico': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "b6727b25d13dd1a3",
+   "ente": "Ente della Sardegna",
+   "titolo": "Funzionario Tecnico appartenente all’Area dei Funzionari e dell’Elevata Qualificazione",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-11",
+   "link_ufficiale": "https://ossian.cloud/concorsi/concorso/130198c44eb64040a5e179f753a719d1.html",
+   "fonti": [
+    "ossian"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "3577f6560d83c1d6",
@@ -2641,13 +3228,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:53",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita’ volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-14"
   },
   {
    "id": "d9846e7e91eefced",
@@ -2666,13 +3254,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:53",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita’ volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-14"
   },
   {
    "id": "6d25a1de3e52637e",
@@ -2690,13 +3279,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-14"
   },
   {
    "id": "95af871d2a38cf18",
@@ -2714,13 +3304,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'ricercatore': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-14"
   },
   {
    "id": "363b6c39f34afa3b",
@@ -2738,13 +3329,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "7a10df42a81ffdac",
@@ -2768,7 +3360,8 @@
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "cb3cb50bab6329a7",
@@ -2786,13 +3379,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "5d93a2ff1c026f78",
@@ -2810,13 +3404,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "7d2bd4578ea832db",
@@ -2834,13 +3429,39 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:53",
-   "ultima_verifica": "2026-10-25T18:17:49",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
+  },
+  {
+   "id": "7ac2c9486540528a",
+   "ente": "Ente della Sardegna",
+   "titolo": "Mobilità: n. 1 posto di funzionario amministrativo, area dei funzionari e dell’elevata qualificazione.",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-13",
+   "link_ufficiale": "https://ossian.cloud/concorsi/concorso/06f7bb20b78c48f79fd9cc668b801b7c.html",
+   "fonti": [
+    "ossian"
+   ],
+   "solo_fonte_secondaria": 1,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "0472decaf1b362f6",
@@ -2854,17 +3475,19 @@
    "scadenza": "2026-11-15",
    "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=7b57c2d5c8d64519a3f27fa9be54227a",
    "fonti": [
-    "inpa"
+    "inpa",
+    "sorso"
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-16"
   },
   {
    "id": "0ebdc618571c56fa",
@@ -2883,13 +3506,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-13"
   },
   {
    "id": "f360594b7adece32",
@@ -2907,13 +3531,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "622c32fd7b7581d4",
@@ -2931,13 +3556,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-16"
   },
   {
    "id": "82aacc85b3f625c6",
@@ -2955,13 +3581,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-16"
   },
   {
    "id": "8bd33e91a4e0dfac",
@@ -2979,13 +3606,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ff680519446c2a44",
@@ -3003,13 +3631,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "27d5fcc70627c453",
@@ -3027,13 +3656,39 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-07"
+  },
+  {
+   "id": "3b584230bfb760d1",
+   "ente": "Comune di Siapiccia",
+   "titolo": "CONCORSO PUBBLICO, PER ESAMI, PER LA COPERTURA A TEMPO PIENO (36 ORE SETTIMANALI) E INDETERMINATO DI N. 1 FUNZIONARIO CONTABILE - AREA DEI FUNZIONARI E DELL’ELEVATA QUALIFICAZIONE AI SENSI DEL CCNL COMPARTO FUNZIONI LOCALI 2019-2021.",
+   "profilo": "Funzionario contabile (ex Istruttore Direttivo contabile, categoria D, posizione economica D1) del CCNL Funzioni Locali da inquadrarsi nella nuova Area dei Funzionari e dell'elevata qualificazione ai sensi della Tabella B del CCNL del 16/11/2022, cui potrà essere attribuito incarico di elevata qualificazione.",
+   "livello": "Concorso",
+   "n_posti": 1,
+   "titolo_studio": null,
+   "sede": "Sardegna, Oristano",
+   "scadenza": "2026-11-18",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=423017b9aa9d4518a7dc09ec20e6f417",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
   },
   {
    "id": "167351b8f2875242",
@@ -3051,13 +3706,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-21"
   },
   {
    "id": "46345a95cf9d95fa",
@@ -3076,13 +3732,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-21"
   },
   {
    "id": "9c9dc2b1d35451d4",
@@ -3100,13 +3757,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilita' esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-20"
   },
   {
    "id": "5a0b27a5d336fc2c",
@@ -3124,13 +3782,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-19"
   },
   {
    "id": "fd8194c94b65da47",
@@ -3154,7 +3813,8 @@
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "ab4da52df28ef420",
@@ -3172,13 +3832,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "77573a31116db7cb",
@@ -3196,13 +3857,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "148019904f8e4978",
@@ -3220,13 +3882,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'funzionario': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "30c66c4ad79d20b0",
@@ -3244,13 +3907,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-22"
   },
   {
    "id": "ae321690ff55aab6",
@@ -3268,13 +3932,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-21"
   },
   {
    "id": "0b060bf29bf1613f",
@@ -3292,13 +3957,14 @@
    ],
    "solo_fonte_secondaria": 1,
    "prima_rilevazione": "2026-10-25T00:23:52",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": null
   },
   {
    "id": "62b5d18b1ab784e7",
@@ -3318,13 +3984,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:53",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-24"
   },
   {
    "id": "beb606aa3dcac7e4",
@@ -3342,13 +4009,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:55",
-   "ultima_verifica": "2026-10-25T18:14:50",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'incarico quinquennale': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
   },
   {
    "id": "ce2dd83459c873b2",
@@ -3366,13 +4034,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:40",
-   "ultima_verifica": "2026-10-25T18:15:06",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'incarico quinquennale': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-23"
   },
   {
    "id": "9cebfaa67b7843d0",
@@ -3386,17 +4055,94 @@
    "scadenza": "2026-11-22",
    "link_ufficiale": "https://www.aressardegna.it/ap/mobilita-esterna-volontaria-n-1-posto-di-dirigente-veterinario-disciplina-di-igiene-degli-allevamenti-e-delle-produzioni-zootecniche-da-destinare-alla-asl-medio-campidano-2824/",
    "fonti": [
-    "ares_sardegna"
+    "ares_sardegna",
+    "inpa"
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-25T00:23:40",
-   "ultima_verifica": "2026-10-25T18:15:06",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità esterna')",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-24"
+  },
+  {
+   "id": "255bcbff68616320",
+   "ente": "Comune di Ossi",
+   "titolo": "Avviso pubblico per esperimento procedura di Mobilità Volontaria esterna, ai sensi dell’art. 30 del D.Lgs. n. 165/2001 e per titoli e colloquio, per la copertura, a tempo pieno e indeterminato, di n.2 posti di Istruttore Amministrativo-Contabile - Area degli Istruttori.",
+   "profilo": "ISTRUTTORE AMMINISTRATIVO CONTABILE",
+   "livello": "Avvisi di mobilità",
+   "n_posti": 2,
+   "titolo_studio": null,
+   "sede": "Sardegna, Sassari",
+   "scadenza": "2026-11-25",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=876c15b630884c9fb6ddd8dded49ed92",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
+  },
+  {
+   "id": "35f1f1f53a33b5f0",
+   "ente": "Comune di Senorbi'",
+   "titolo": "COMUNE DI SENORBI' - AVVISO DI MOBILITÀ VOLONTARIA ESTERNA TRA ENTI AI SENSI DELL’ART. 30 D.LGS. N. 165/2001 PER LA COPERTURA A TEMPO INDETERMINATO E PIENO DI N. 1 FUNZIONARIO CONTABILE - AREA DEI FUNZIONARI E DELL’ELEVATE QUALIFICAZIONI.",
+   "profilo": "Funzionario Contabile",
+   "livello": "Avvisi di mobilità",
+   "n_posti": 1,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-26",
+   "link_ufficiale": "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=4de57dde586c406a982f670f1bfea3b8",
+   "fonti": [
+    "inpa"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Riservato a dipendenti pubblici ('mobilità volontaria')",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
+  },
+  {
+   "id": "58617edd53853185",
+   "ente": "ARES Sardegna",
+   "titolo": "Selezione Pubblica, per soli titoli per l assunzione, con contratto a tempo determinato, di Dirigenti Medici, disciplina Igiene e Medicina Preventiva, da destinare alle Aziende del SSR. 2844",
+   "profilo": null,
+   "livello": null,
+   "n_posti": null,
+   "titolo_studio": null,
+   "sede": "Sardegna",
+   "scadenza": "2026-11-26",
+   "link_ufficiale": "https://www.aressardegna.it/ap/selezione-pubblica-per-soli-titoli-per-l-assunzione-con-contratto-a-tempo-determinato-di-dirigenti-medici-disciplina-igiene-e-medicina-preventiva-da-destinare-alle-aziende-del-ssr-2844/",
+   "fonti": [
+    "ares_sardegna"
+   ],
+   "solo_fonte_secondaria": 0,
+   "prima_rilevazione": "2026-10-26T17:37:20",
+   "ultima_verifica": "2026-10-26T17:37:20",
+   "punteggio": 0,
+   "motivo_punteggio": "Titolo studio: 0/30 (profilo 'dirigenti': di norma richiede laurea)",
+   "sezione": "archivio",
+   "stato": "da_vedere",
+   "note": null,
+   "attivo": 1,
+   "data_pubblicazione": "2026-10-26"
   },
   {
    "id": "26bac123edb7155f",
@@ -3415,13 +4161,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:17:47",
+   "ultima_verifica": "2026-10-26T17:37:21",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'medici': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-06-18"
   },
   {
    "id": "6c578f99fcd0b6ad",
@@ -3439,13 +4186,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-02-02"
   },
   {
    "id": "0c6f1e000201158c",
@@ -3463,13 +4211,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docenti': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-02-09"
   },
   {
    "id": "139bc88eaed2caf8",
@@ -3487,13 +4236,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-02-17"
   },
   {
    "id": "c01ddf1a2aad1a96",
@@ -3511,13 +4261,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-02-19"
   },
   {
    "id": "45cdd2d89910539c",
@@ -3535,13 +4286,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-02-24"
   },
   {
    "id": "351cf30bdaa3ae19",
@@ -3559,13 +4311,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-03-03"
   },
   {
    "id": "c6ce7712927a4bff",
@@ -3583,13 +4336,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-03-10"
   },
   {
    "id": "deb7bd0b031e76b3",
@@ -3607,13 +4361,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-03-11"
   },
   {
    "id": "b94afd282d2d7f75",
@@ -3631,13 +4386,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2026-03-16"
   },
   {
    "id": "046fe590dc0fbe72",
@@ -3655,13 +4411,14 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docenti': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2025-03-21"
   },
   {
    "id": "fc4c8a8e268fe729",
@@ -3679,29 +4436,504 @@
    ],
    "solo_fonte_secondaria": 0,
    "prima_rilevazione": "2026-10-24T23:50:54",
-   "ultima_verifica": "2026-10-25T18:14:46",
+   "ultima_verifica": "2026-10-26T17:37:20",
    "punteggio": 0,
    "motivo_punteggio": "Titolo studio: 0/30 (profilo 'docente': di norma richiede laurea)",
    "sezione": "archivio",
    "stato": "da_vedere",
    "note": null,
-   "attivo": 1
+   "attivo": 1,
+   "data_pubblicazione": "2025-05-19"
   }
  ],
  "errori": [
   {
    "fonte": "mit_attivi",
    "url": "https://trasparenza.mit.gov.it/pagina640_concorsi-attivi.html",
-   "ultimo_errore": "2026-10-25T18:17:46.625632",
-   "motivo": "Tutti i tentativi esauriti (https://trasparenza.mit.gov.it/pagina640_concorsi-attivi.html)",
+   "ultimo_errore": "2026-10-26T17:37:20.716151",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://trasparenza.mit.gov.it/pagina640_concorsi-attivi.html)",
    "tipo_errore": "errore"
   },
   {
-   "fonte": "atp_sassari",
-   "url": "https://atpsassari.portaletrasparenza.net/it/trasparenza/selezione-del-personale/reclutamento-del-personale/bandi-e-avvisi-di-selezione-per-i-quali-e-possibile-presentare-domanda-di-partecipazione.html",
-   "ultimo_errore": "2026-10-25T18:14:58.475259",
-   "motivo": "selettore 'ul.menu-level-4.show' non trovato (https://atpsassari.portaletrasparenza.net/it/trasparenza/selezione-del-personale/reclutamento-del-personale/bandi-e-avvisi-di-selezione-per-i-quali-e-possibile-presentare-domanda-di-partecipazione.html)",
+   "fonte": "unione_logudoro",
+   "url": "https://egov4.halleysardegna.com/udclogudoro/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.314194",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov4.halleysardegna.com/udclogudoro/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
    "tipo_errore": "errore"
+  },
+  {
+   "fonte": "unione_coros",
+   "url": "https://sol.unionecoros.it/udccoros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.313047",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sol.unionecoros.it/udccoros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "usini",
+   "url": "https://sac2-hs.halleysac.it/usini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.311645",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sac2-hs.halleysac.it/usini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "uri",
+   "url": "https://egov.halleysardegna.com/uri/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.310717",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov.halleysardegna.com/uri/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "torralba",
+   "url": "https://egov.halleysardegna.com/torralba/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.309719",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov.halleysardegna.com/torralba/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "thiesi",
+   "url": "https://egov5.halleysardegna.com/thiesi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.308616",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov5.halleysardegna.com/thiesi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "sedini",
+   "url": "https://sac2-hs.halleysac.it/sedini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.307591",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sac2-hs.halleysac.it/sedini/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "pozzomaggiore",
+   "url": "https://egov.halleysardegna.com/pozzomaggiore/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.306573",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov.halleysardegna.com/pozzomaggiore/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "ploaghe",
+   "url": "https://egov7.halleysardegna.com/ploaghe/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.305270",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov7.halleysardegna.com/ploaghe/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "ossi",
+   "url": "https://sol.comune.ossi.ss.it/ossi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.304283",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sol.comune.ossi.ss.it/ossi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "muros",
+   "url": "https://sol.comune.muros.ss.it/muros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.303216",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sol.comune.muros.ss.it/muros/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "martis",
+   "url": "https://servizi.comune.martis.ss.it/martis/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.302213",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://servizi.comune.martis.ss.it/martis/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "mara",
+   "url": "https://sac2-hs.halleysac.it/mara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.301208",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sac2-hs.halleysac.it/mara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "laerru",
+   "url": "https://egov.halleysardegna.com/laerru/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.300211",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov.halleysardegna.com/laerru/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "giave",
+   "url": "https://sac2-hs.halleysac.it/giave/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.299153",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sac2-hs.halleysac.it/giave/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "chiaramonti",
+   "url": "https://egov7.halleysardegna.com/chiaramonti/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.298164",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov7.halleysardegna.com/chiaramonti/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "castelsardo",
+   "url": "https://sol.comune.castelsardo.ss.it/castelsardo/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.297079",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sol.comune.castelsardo.ss.it/castelsardo/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "bulzi",
+   "url": "https://sol.comune.bulzi.ss.it/bulzi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.296035",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sol.comune.bulzi.ss.it/bulzi/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "borutta",
+   "url": "https://egov.halleysardegna.com/borutta/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.295054",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov.halleysardegna.com/borutta/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "banari",
+   "url": "https://sol.comune.banari.ss.it/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.293996",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://sol.comune.banari.ss.it/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  },
+  {
+   "fonte": "ardara",
+   "url": "https://egov5.halleysardegna.com/ardara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso",
+   "ultimo_errore": "2026-10-26T17:37:20.292445",
+   "motivo": "Tutti i tentativi esauriti: connessione rifiutata o interrotta (https://egov5.halleysardegna.com/ardara/zf/index.php/bandi-di-concorso/index/index/concorsi/in-corso)",
+   "tipo_errore": "errore"
+  }
+ ],
+ "enti_monitorati": [
+  {
+   "ente": "AOU Sassari",
+   "fonti": [
+    "aou_sassari"
+   ]
+  },
+  {
+   "ente": "ARES Sardegna",
+   "fonti": [
+    "ares_sardegna"
+   ]
+  },
+  {
+   "ente": "AREUS Sardegna",
+   "fonti": [
+    "areus"
+   ]
+  },
+  {
+   "ente": "ASPAL - Agenzia Regionale per il Lavoro",
+   "fonti": [
+    "aspal_art16",
+    "aspal_avvisi",
+    "aspal_concorsi"
+   ]
+  },
+  {
+   "ente": "ATP Sassari",
+   "fonti": [
+    "atp_sassari"
+   ]
+  },
+  {
+   "ente": "Abbanoa",
+   "fonti": [
+    "abbanoa_aperte"
+   ]
+  },
+  {
+   "ente": "Agenzia Forestas",
+   "fonti": [
+    "forestas"
+   ]
+  },
+  {
+   "ente": "Agenzia delle Entrate",
+   "fonti": [
+    "agenzia_entrate_ns"
+   ]
+  },
+  {
+   "ente": "Agenzia delle entrate-Riscossione",
+   "fonti": [
+    "ader_aperte"
+   ]
+  },
+  {
+   "ente": "Città Metropolitana di Sassari",
+   "fonti": [
+    "citta_metropolitana_ss"
+   ]
+  },
+  {
+   "ente": "Comune di Ardara",
+   "fonti": [
+    "ardara"
+   ]
+  },
+  {
+   "ente": "Comune di Banari",
+   "fonti": [
+    "banari"
+   ]
+  },
+  {
+   "ente": "Comune di Bessude",
+   "fonti": [
+    "bessude"
+   ]
+  },
+  {
+   "ente": "Comune di Bonnanaro",
+   "fonti": [
+    "bonnanaro"
+   ]
+  },
+  {
+   "ente": "Comune di Borutta",
+   "fonti": [
+    "borutta"
+   ]
+  },
+  {
+   "ente": "Comune di Bulzi",
+   "fonti": [
+    "bulzi"
+   ]
+  },
+  {
+   "ente": "Comune di Cargeghe",
+   "fonti": [
+    "cargeghe"
+   ]
+  },
+  {
+   "ente": "Comune di Castelsardo",
+   "fonti": [
+    "castelsardo"
+   ]
+  },
+  {
+   "ente": "Comune di Chiaramonti",
+   "fonti": [
+    "chiaramonti"
+   ]
+  },
+  {
+   "ente": "Comune di Cossoine",
+   "fonti": [
+    "cossoine"
+   ]
+  },
+  {
+   "ente": "Comune di Erula",
+   "fonti": [
+    "erula"
+   ]
+  },
+  {
+   "ente": "Comune di Florinas",
+   "fonti": [
+    "florinas"
+   ]
+  },
+  {
+   "ente": "Comune di Giave",
+   "fonti": [
+    "giave"
+   ]
+  },
+  {
+   "ente": "Comune di Laerru",
+   "fonti": [
+    "laerru"
+   ]
+  },
+  {
+   "ente": "Comune di Mara",
+   "fonti": [
+    "mara"
+   ]
+  },
+  {
+   "ente": "Comune di Martis",
+   "fonti": [
+    "martis"
+   ]
+  },
+  {
+   "ente": "Comune di Monteleone Rocca Doria",
+   "fonti": [
+    "monteleone_rocca_doria"
+   ]
+  },
+  {
+   "ente": "Comune di Mores",
+   "fonti": [
+    "mores"
+   ]
+  },
+  {
+   "ente": "Comune di Muros",
+   "fonti": [
+    "muros"
+   ]
+  },
+  {
+   "ente": "Comune di Olmedo",
+   "fonti": [
+    "olmedo"
+   ]
+  },
+  {
+   "ente": "Comune di Osilo",
+   "fonti": [
+    "osilo"
+   ]
+  },
+  {
+   "ente": "Comune di Ossi",
+   "fonti": [
+    "ossi"
+   ]
+  },
+  {
+   "ente": "Comune di Padria",
+   "fonti": [
+    "padria"
+   ]
+  },
+  {
+   "ente": "Comune di Perfugas",
+   "fonti": [
+    "perfugas"
+   ]
+  },
+  {
+   "ente": "Comune di Ploaghe",
+   "fonti": [
+    "ploaghe"
+   ]
+  },
+  {
+   "ente": "Comune di Pozzomaggiore",
+   "fonti": [
+    "pozzomaggiore"
+   ]
+  },
+  {
+   "ente": "Comune di Santa Maria Coghinas",
+   "fonti": [
+    "santa_maria_coghinas"
+   ]
+  },
+  {
+   "ente": "Comune di Sedini",
+   "fonti": [
+    "sedini"
+   ]
+  },
+  {
+   "ente": "Comune di Semestene",
+   "fonti": [
+    "semestene"
+   ]
+  },
+  {
+   "ente": "Comune di Sennori",
+   "fonti": [
+    "sennori"
+   ]
+  },
+  {
+   "ente": "Comune di Siligo",
+   "fonti": [
+    "siligo"
+   ]
+  },
+  {
+   "ente": "Comune di Sorso",
+   "fonti": [
+    "sorso"
+   ]
+  },
+  {
+   "ente": "Comune di Stintino",
+   "fonti": [
+    "stintino"
+   ]
+  },
+  {
+   "ente": "Comune di Thiesi",
+   "fonti": [
+    "thiesi"
+   ]
+  },
+  {
+   "ente": "Comune di Tissi",
+   "fonti": [
+    "tissi"
+   ]
+  },
+  {
+   "ente": "Comune di Torralba",
+   "fonti": [
+    "torralba"
+   ]
+  },
+  {
+   "ente": "Comune di Uri",
+   "fonti": [
+    "uri"
+   ]
+  },
+  {
+   "ente": "Comune di Usini",
+   "fonti": [
+    "usini"
+   ]
+  },
+  {
+   "ente": "Comune di Valledoria",
+   "fonti": [
+    "valledoria"
+   ]
+  },
+  {
+   "ente": "Comune di Viddalba",
+   "fonti": [
+    "viddalba"
+   ]
+  },
+  {
+   "ente": "Ministero delle Infrastrutture e dei Trasporti",
+   "fonti": [
+    "mit_attivi"
+   ]
+  },
+  {
+   "ente": "Unione dei Comuni del Coros",
+   "fonti": [
+    "unione_coros"
+   ]
+  },
+  {
+   "ente": "Unione dei Comuni del Logudoro",
+   "fonti": [
+    "unione_logudoro"
+   ]
+  },
+  {
+   "ente": "Unione dei Comuni del Villanova",
+   "fonti": [
+    "unione_villanova"
+   ]
+  },
+  {
+   "ente": "Università di Sassari",
+   "fonti": [
+    "uniss_pta"
+   ]
   }
  ]
 }
