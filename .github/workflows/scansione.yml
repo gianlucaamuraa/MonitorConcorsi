@@ -19,7 +19,7 @@ concurrency:
 jobs:
   scansione:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     environment:
       name: github-pages
       url: ${{ steps.pubblica.outputs.page_url }}

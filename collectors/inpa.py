@@ -132,6 +132,7 @@ class CollettoreInPA(CollettoreBase):
                 link_ufficiale=link,
                 profilo=c.get("figuraRicercata"),
                 livello=categorie or None,
+                data_pubblicazione=a_iso(parse_data(c.get("dataPubblicazione"))),
             ))
         self.logger.info(f"[inpa] {len(bandi)} bandi in Sardegna/nazionali")
         return bandi

@@ -37,8 +37,8 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 from collectors.base import CollettoreBase
-from core.dates import (a_iso, anno_piu_recente, data_piu_recente, estrai_scadenza,
-                        is_scaduto, oggi, parse_data)
+from core.dates import (a_iso, anno_piu_recente, data_piu_recente, estrai_pubblicazione,
+                        estrai_scadenza, is_scaduto, oggi, parse_data)
 
 FILTRO_DEFAULT = (r"concors|selezion|avviso|bando|mobilit|reclutament|assunzion|\bpost[oi]\b|"
                   r"interpello|\bistruttor[ei]\b|\bfunzionari[oa]?\b")
@@ -85,6 +85,10 @@ class CollettoreGenerico(CollettoreBase):
         self.NOME_FONTE = nome
         self.URL_BASE = url
         super().__init__()
+        # Siti comunali: chi non risponde in 20 secondi di solito non risponde
+        # affatto (spesso bloccano i server esteri, come quelli di GitHub)
+        self.timeout = min(self.timeout, 20)
+        self.max_tentativi = min(self.max_tentativi, 2)
         self.url = url
         self.tipo = tipo
         self.ente = ente or nome
@@ -141,12 +145,15 @@ class CollettoreGenerico(CollettoreBase):
             visti.add((link, titolo))
 
             scadenza = estrai_scadenza(f"{titolo} {extra}")
+            pubblicazione = estrai_pubblicazione(f"{titolo} {extra}")
             if scadenza and is_scaduto(scadenza):
                 continue
             if scadenza is None and _vecchio(titolo, link, extra):
                 continue
             if scadenza is None and self.max_giorni_pubblicazione:
-                pubblicato = parse_data(extra) or parse_data(titolo)
+                # Pagine di notizie: la prima data del riquadro è quella di pubblicazione
+                pubblicato = pubblicazione or parse_data(extra) or parse_data(titolo)
+                pubblicazione = pubblicato
                 if pubblicato and (oggi() - pubblicato).days > self.max_giorni_pubblicazione:
                     continue
             if scadenza is None and self.dettagli:
@@ -154,7 +161,8 @@ class CollettoreGenerico(CollettoreBase):
                 if aperti >= self.max_dettagli:
                     continue
                 aperti += 1
-                scadenza, recente = self._date_dal_dettaglio(link)
+                scadenza, recente, pubbl_dettaglio = self._date_dal_dettaglio(link)
+                pubblicazione = pubblicazione or pubbl_dettaglio
                 if scadenza and is_scaduto(scadenza):
                     continue
                 if scadenza is None:
@@ -168,22 +176,24 @@ class CollettoreGenerico(CollettoreBase):
                 sede=self.sede,
                 scadenza=a_iso(scadenza),
                 link_ufficiale=link,
+                data_pubblicazione=a_iso(pubblicazione),
             ))
 
         self.logger.info(f"[{self.NOME_FONTE}] {len(bandi)} bandi trovati")
         return bandi
 
     def _date_dal_dettaglio(self, link: str):
-        """(scadenza, data più recente) lette dalla pagina del bando; (None, None) se non è HTML."""
+        """(scadenza, data più recente, data di pubblicazione) lette dalla pagina del
+        bando; tutte None se la pagina non è HTML (es. un PDF)."""
         self._pausa()
         r = self.get(link)
         if r is None or "html" not in r.headers.get("content-type", "html"):
-            return None, None
+            return None, None, None
         zuppa = BeautifulSoup(r.content, "lxml")
         for tag in zuppa(["script", "style", "nav", "header", "footer"]):
             tag.decompose()
         testo = _spazi(zuppa.get_text(" "))
-        return estrai_scadenza(testo), data_piu_recente(testo)
+        return estrai_scadenza(testo), data_piu_recente(testo), estrai_pubblicazione(testo)
 
     # ------------------------------------------------------------------
     def _pagina(self):

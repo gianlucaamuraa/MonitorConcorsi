@@ -128,6 +128,16 @@
                             <option value="60">60 giorni</option>
                         </select>
                     </div>
+                    <div class="filtro-gruppo">
+                        <label for="filtro-pubblicazione">Pubblicati</label>
+                        <select id="filtro-pubblicazione" onchange="filtra()">
+                            <option value="">In qualsiasi data</option>
+                            <option value="3">Negli ultimi 3 giorni</option>
+                            <option value="7">Nell'ultima settimana</option>
+                            <option value="15">Negli ultimi 15 giorni</option>
+                            <option value="30">Nell'ultimo mese</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="filtri-azioni">
                     <button onclick="resettaFiltri()" class="btn btn-contorno">Azzera filtri</button>

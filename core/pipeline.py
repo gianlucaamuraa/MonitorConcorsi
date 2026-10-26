@@ -1,7 +1,7 @@
 """
 core/pipeline.py — Una scansione completa
 
-1. Per ogni fonte attiva in fonti.yaml: scarica i bandi
+1. Per ogni fonte attiva in fonti.yaml: scarica i bandi (siti diversi in parallelo)
 2. Scarta i bandi scaduti
 3. Calcola il punteggio e salva (con deduplica tra fonti)
 4. Registra l'esito di ogni fonte nel log
@@ -13,6 +13,8 @@ core/pipeline.py — Una scansione completa
 
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlparse
 
 from collectors.registry import crea_collettore, fonti_attive
 from core.config import carica_config, percorso
@@ -37,6 +39,44 @@ def ricalcola_punteggi(profilo: dict) -> int:
     return len(bandi)
 
 
+LETTURE_IN_PARALLELO = 8   # siti diversi letti contemporaneamente
+
+
+def _leggi_fonti(fonti: list[dict]):
+    """
+    Legge le fonti in parallelo e restituisce, nell'ordine di fonti.yaml,
+    (fonte, collettore, bandi, eccezione).
+
+    Le fonti sullo stesso sito (es. cinque comuni su egov.halleysardegna.com)
+    restano in fila, con le loro pause, per non sovraccaricare quel server.
+    Il database si aggiorna dopo, nel thread principale.
+    """
+    gruppi: dict[str, list[tuple[int, dict]]] = {}
+    for i, f in enumerate(fonti):
+        sito = urlparse(f.get("url") or "").netloc.lower() or f.get("tipo", "?")
+        gruppi.setdefault(sito, []).append((i, f))
+
+    def leggi_gruppo(elenco):
+        risultati = []
+        for i, fonte in elenco:
+            log.info(f"Scansione fonte: {fonte.get('nome', '?')}")
+            collettore = None
+            try:
+                collettore = crea_collettore(fonte)
+                risultati.append((i, fonte, collettore, collettore.esegui(), None))
+            except Exception as e:
+                log.exception(f"Errore nella fonte {fonte.get('nome', '?')}")
+                risultati.append((i, fonte, collettore, [], e))
+        return risultati
+
+    tutti = []
+    with ThreadPoolExecutor(max_workers=LETTURE_IN_PARALLELO) as ex:
+        for risultati in ex.map(leggi_gruppo, gruppi.values()):
+            tutti.extend(risultati)
+    tutti.sort(key=lambda r: r[0])
+    return [r[1:] for r in tutti]
+
+
 def esegui_scansione(solo: list[str] | None = None, notifica: bool = True) -> dict:
     """Esegue la scansione e restituisce un riepilogo."""
     init_db()
@@ -46,17 +86,12 @@ def esegui_scansione(solo: list[str] | None = None, notifica: bool = True) -> di
 
     riepilogo = {"fonti": [], "nuovi": [], "scartati_scaduti": 0}
 
-    for fonte in fonti_attive(solo):
+    for fonte, collettore, bandi, eccezione in _leggi_fonti(fonti_attive(solo)):
         nome = fonte.get("nome", "?")
-        url = fonte.get("url", "")
-        log.info(f"Scansione fonte: {nome}")
-        try:
-            collettore = crea_collettore(fonte)
-            url = url or collettore.URL_BASE
-            bandi = collettore.esegui()
-        except Exception as e:
-            log.exception(f"Errore nella fonte {nome}")
-            log_scansione(nome, url, "errore", errore=str(e)[:500])
+        url = fonte.get("url", "") or (collettore.URL_BASE if collettore else "")
+        if eccezione is not None:
+            log.error(f"Errore nella fonte {nome}: {eccezione}")
+            log_scansione(nome, url, "errore", errore=str(eccezione)[:500])
             riepilogo["fonti"].append({"fonte": nome, "esito": "errore", "n_bandi": 0, "n_nuovi": 0})
             continue
 

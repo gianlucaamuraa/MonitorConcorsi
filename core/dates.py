@@ -113,6 +113,26 @@ def estrai_scadenza(testo: str | None) -> date | None:
     return None
 
 
+_RE_PAROLA_PUBBL = re.compile(
+    r"\b(?:data (?:di )?pubblicazione|pubblicat[oaie]\b(?:\s+(?:il|in data|dal))?|"
+    r"pubblicazione(?:\s+(?:il|dal))?|in pubblicazione dal)\s*:?\s*", re.IGNORECASE)
+
+
+def estrai_pubblicazione(testo: str | None) -> date | None:
+    """Data di pubblicazione scritta nel testo: "Pubblicato il 3 ottobre 2026",
+    "Data di pubblicazione: 18.09.2026", "In pubblicazione dal 02/10/2026"."""
+    if not testo:
+        return None
+    for m in _RE_PAROLA_PUBBL.finditer(testo):
+        # "Pubblicato sul portale inPA il 29 settembre 2026": la data può essere
+        # qualche parola più in là, ma nella stessa frase
+        finestra = testo[m.end():m.end() + 50].split(". ")[0]
+        d = parse_data(finestra)
+        if d and d <= oggi():
+            return d
+    return None
+
+
 def data_piu_recente(testo: str | None) -> date | None:
     """Data più recente (non futura) citata nel testo, es. nel nome di un allegato
     "DET._1075_del_16.09.2026.pdf". Serve a capire quanto è vecchia una pagina."""

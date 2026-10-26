@@ -45,6 +45,7 @@ def init_db():
                 titolo_studio TEXT,            -- titolo di studio richiesto (testo libero)
                 sede TEXT,                     -- sede di lavoro
                 scadenza TEXT,                 -- data scadenza (ISO 8601: YYYY-MM-DD)
+                data_pubblicazione TEXT,       -- data di pubblicazione del bando, se nota
                 link_ufficiale TEXT,           -- URL al bando ufficiale
                 fonti TEXT DEFAULT '[]',       -- JSON array: lista delle fonti in cui compare
                 solo_fonte_secondaria INTEGER DEFAULT 0,  -- 1 = trovato solo su fonte secondaria
@@ -91,6 +92,10 @@ def init_db():
             CREATE INDEX IF NOT EXISTS idx_bandi_punteggio ON bandi(punteggio DESC);
             CREATE INDEX IF NOT EXISTS idx_scan_log_timestamp ON scan_log(timestamp DESC);
         """)
+        # Colonne aggiunte dopo la prima versione: le creo nei database già esistenti
+        colonne = {r["name"] for r in conn.execute("PRAGMA table_info(bandi)")}
+        if "data_pubblicazione" not in colonne:
+            conn.execute("ALTER TABLE bandi ADD COLUMN data_pubblicazione TEXT")
     conn.close()
 
 
@@ -161,13 +166,14 @@ def upsert_bando(bando: dict) -> bool:
                         fonti = ?,
                         solo_fonte_secondaria = ?,
                         scadenza = COALESCE(scadenza, ?),
+                        data_pubblicazione = COALESCE(data_pubblicazione, ?),
                         link_ufficiale = COALESCE(NULLIF(link_ufficiale, ''), ?),
                         ultima_verifica = ?,
                         attivo = 1
                     WHERE id = ?
                 """, (json.dumps(fonti_aggiornate), solo_secondaria,
-                      bando.get("scadenza"), bando.get("link_ufficiale"),
-                      ora, esistente["id"]))
+                      bando.get("scadenza"), bando.get("data_pubblicazione"),
+                      bando.get("link_ufficiale"), ora, esistente["id"]))
                 bando["id"] = esistente["id"]
                 return False  # Non è nuovo
 
@@ -179,13 +185,13 @@ def upsert_bando(bando: dict) -> bool:
             conn.execute("""
                 INSERT INTO bandi (
                     id, ente, titolo, profilo, livello, n_posti,
-                    titolo_studio, sede, scadenza, link_ufficiale,
+                    titolo_studio, sede, scadenza, data_pubblicazione, link_ufficiale,
                     fonti, solo_fonte_secondaria, prima_rilevazione,
                     ultima_verifica, punteggio, motivo_punteggio,
                     sezione, stato, note, attivo
                 ) VALUES (
                     :id, :ente, :titolo, :profilo, :livello, :n_posti,
-                    :titolo_studio, :sede, :scadenza, :link_ufficiale,
+                    :titolo_studio, :sede, :scadenza, :data_pubblicazione, :link_ufficiale,
                     :fonti, :solo_fonte_secondaria, :prima_rilevazione,
                     :ultima_verifica, :punteggio, :motivo_punteggio,
                     :sezione, :stato, :note, :attivo
@@ -200,6 +206,7 @@ def upsert_bando(bando: dict) -> bool:
                 "titolo_studio": bando.get("titolo_studio"),
                 "sede": bando.get("sede"),
                 "scadenza": bando.get("scadenza"),
+                "data_pubblicazione": bando.get("data_pubblicazione"),
                 "link_ufficiale": bando.get("link_ufficiale"),
                 "fonti": fonti_json,
                 "solo_fonte_secondaria": bando.get("solo_fonte_secondaria", 0),

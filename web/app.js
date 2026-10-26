@@ -101,6 +101,19 @@ function formatoData(iso) {
     return d ? d.toLocaleDateString("it-IT") : "n/d";
 }
 
+// Data di pubblicazione; se la fonte non la indica uso il giorno in cui il
+// programma ha trovato il bando (è al massimo qualche giorno dopo)
+function pubblicazioneDi(b) {
+    if (b.data_pubblicazione) return { iso: b.data_pubblicazione, stimata: false };
+    const rilevato = (b.prima_rilevazione || "").slice(0, 10);
+    return { iso: rilevato || null, stimata: true };
+}
+
+function giorniDallaPubblicazione(b) {
+    const g = giorniRimasti(pubblicazioneDi(b).iso);
+    return g === null ? null : -g;
+}
+
 function scaduto(b) {
     const g = giorniRimasti(b.scadenza);
     return g !== null && g < 0;
@@ -341,6 +354,7 @@ function filtra() {
     const testo = $("filtro-testo").value.trim().toLowerCase();
     const minimo = Number($("filtro-punteggio").value);
     const entro = $("filtro-scadenza").value;
+    const pubblicatiDa = $("filtro-pubblicazione").value;
 
     const risultati = STATO.bandi.filter((b) => {
         // Archivio e scartati si vedono solo se richiesti esplicitamente
@@ -355,6 +369,10 @@ function filtra() {
         if (ente && !enteCorrisponde(b, ente)) return false;
         if (testo && !`${b.titolo} ${b.ente} ${b.profilo || ""}`.toLowerCase().includes(testo)) return false;
         if ((b.punteggio || 0) < minimo) return false;
+        if (pubblicatiDa) {
+            const g = giorniDallaPubblicazione(b);
+            if (g === null || g > Number(pubblicatiDa)) return false;
+        }
         if (entro) {
             const g = giorniRimasti(b.scadenza);
             if (g === null || g > Number(entro)) return false;
@@ -376,7 +394,7 @@ function aggiornaSliderpunteggio(valore) {
 }
 
 function resettaFiltri() {
-    ["filtro-sezione", "filtro-stato", "filtro-zona", "filtro-ente", "filtro-scadenza"].forEach((id) => { $(id).value = ""; });
+    ["filtro-sezione", "filtro-stato", "filtro-zona", "filtro-ente", "filtro-scadenza", "filtro-pubblicazione"].forEach((id) => { $(id).value = ""; });
     $("filtro-testo").value = "";
     $("filtro-punteggio").value = 0;
     aggiornaSliderpunteggio(0);
@@ -390,6 +408,14 @@ function badgeScadenza(b) {
     if (g === 0) return `<span class="badge badge-urgente">Scade oggi</span>`;
     if (g <= 7) return `<span class="badge badge-urgente">Scade tra ${g} gg (${formatoData(b.scadenza)})</span>`;
     return `<span class="badge badge-scadenza">Scade il ${formatoData(b.scadenza)}</span>`;
+}
+
+function metaPubblicazione(b) {
+    const p = pubblicazioneDi(b);
+    if (!p.iso) return "";
+    const etichetta = p.stimata ? "Rilevato il" : "Pubblicato il";
+    const aiuto = p.stimata ? ' title="La fonte non indica la data di pubblicazione: è il giorno in cui il bando è stato trovato"' : "";
+    return `<span${aiuto}><span class="etichetta">${etichetta}</span> ${formatoData(p.iso)}</span>`;
 }
 
 function disegnaLista(bandi) {
@@ -413,6 +439,7 @@ function disegnaLista(bandi) {
                     <span><span class="etichetta">Ente</span> ${esc(b.ente)}</span>
                     ${b.sede ? `<span><span class="etichetta">Sede</span> ${esc(b.sede)}</span>` : ""}
                     ${b.n_posti ? `<span><span class="etichetta">Posti</span> ${esc(b.n_posti)}</span>` : ""}
+                    ${metaPubblicazione(b)}
                 </div>
                 <div class="bando-meta bando-badge">
                     <span class="badge badge-punteggio" title="${esc(b.motivo_punteggio)}">${b.punteggio || 0}/100</span>
@@ -446,6 +473,7 @@ function apriDettaglio(id) {
         <dl class="dettaglio">
             <dt>Ente</dt><dd>${esc(b.ente)}</dd>
             <dt>Sede</dt><dd>${esc(b.sede || "n/d")}</dd>
+            <dt>Pubblicazione</dt><dd>${b.data_pubblicazione ? formatoData(b.data_pubblicazione) : "non indicata dalla fonte"}</dd>
             <dt>Scadenza</dt><dd>${formatoData(b.scadenza)}</dd>
             <dt>Posti</dt><dd>${esc(b.n_posti || "n/d")}</dd>
             ${b.profilo ? `<dt>Profilo</dt><dd>${esc(b.profilo)}</dd>` : ""}

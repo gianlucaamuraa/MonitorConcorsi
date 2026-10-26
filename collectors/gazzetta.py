@@ -43,6 +43,12 @@ ENTI_NAZIONALI = re.compile(
 )
 
 
+def _data_dal_link(link: str) -> str | None:
+    """Data del numero della Gazzetta, scritta nell'indirizzo: .../eli/id/2026/10/23/..."""
+    m = re.search(r"/(20\d{2})/(\d{2})/(\d{2})/", link or "")
+    return f"{m[1]}-{m[2]}-{m[3]}" if m else None
+
+
 class CollettoreGazzetta(CollettoreBase):
     NOME_FONTE = "gazzetta_ufficiale"
     URL_BASE = "https://www.gazzettaufficiale.it"
@@ -102,6 +108,7 @@ class CollettoreGazzetta(CollettoreBase):
                 scadenza=scadenza,
                 n_posti=int(m_posti.group(1)) if m_posti else None,
                 link_ufficiale=link,
+                data_pubblicazione=_data_dal_link(link),
             ))
 
         self.logger.info(f"[gazzetta] {len(voci)} voci nel numero, {len(bandi)} pertinenti")
