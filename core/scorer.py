@@ -103,7 +103,7 @@ _RE_SARDEGNA = _regex(SEDI_SARDEGNA)
 _RE_REMOTO = _regex(["remoto", "telelavoro", "smart working", "lavoro agile"])
 _RE_RISERVATI = re.compile(
     r"mobilit[aà]['’]?\s*(?:esterna|volontaria|tra enti|compartimentale|intercompartimentale)?"
-    r"|art\.?\s*30\s*(?:del)?\s*d\.?\s*lgs|progression[ei] vertical[ei]|riservat[oa] al personale (?:interno|dipendente)"
+    r"|art\.?\s*30\s*(?:del)?\s*d\.?\s*lgs|progression[ei] vertical[ei]|(?:riservat|rivolt)[oa] al personale (?:interno|dipendente)"
     r"|procedura (?:selettiva )?interna",
     re.IGNORECASE,
 )
