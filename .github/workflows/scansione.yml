@@ -44,7 +44,9 @@ jobs:
           TS_AUTHKEY: ${{ secrets.TS_AUTHKEY }}
           TS_EXIT_NODE: iphone173
         run: |
-          if [ -z "$TS_AUTHKEY" ]; then echo "Secret TS_AUTHKEY mancante"; exit 1; fi
+          # Gli esiti finiscono nel riepilogo della scansione (::notice / ::warning)
+          trap 'echo "::warning title=Tailscale::fallito il comando: $BASH_COMMAND"' ERR
+          if [ -z "$TS_AUTHKEY" ]; then echo "::warning title=Tailscale::secret TS_AUTHKEY mancante"; exit 1; fi
           curl -fsSL https://tailscale.com/install.sh | sh
           # L'installazione avvia il servizio normale, che devierebbe tutta la
           # rete del server: lo fermo e avvio quello che offre solo il proxy.
@@ -56,12 +58,18 @@ jobs:
           sudo tailscale up --authkey="$TS_AUTHKEY" --hostname=github-scansione --timeout=60s
           # Il nome dell'iPhone si risolve solo a collegamento avvenuto
           sudo tailscale set --exit-node="$TS_EXIT_NODE"
-          sudo tailscale status
+          sudo tailscale status || true
+          nodo=$(sudo tailscale status --json | jq -r '.ExitNodeStatus | if . == null then "nessun nodo di uscita" else "nodo di uscita online=\(.Online)" end')
+          echo "::notice title=Tailscale::$nodo"
           # Prova: da dove esce il proxy? (loc=IT se passa dall'iPhone)
           paese=$(curl -s --max-time 30 -x http://localhost:1056 \
             https://www.cloudflare.com/cdn-cgi/trace | grep '^loc=' || true)
-          echo "Uscita del proxy: ${paese:-nessuna risposta}"
-          if [ "$paese" != "loc=IT" ]; then echo "Il proxy non esce dall'Italia"; exit 1; fi
+          if [ "$paese" != "loc=IT" ]; then
+            echo "::warning title=Tailscale::il proxy non esce dall'Italia (${paese:-nessuna risposta})"
+            tail -n 30 /tmp/tailscaled.log
+            exit 1
+          fi
+          echo "::notice title=Tailscale::proxy attivo, uscita $paese"
           echo "PROXY_ITALIA=http://localhost:1056" >> "$GITHUB_ENV"
 
       - name: Scansiona le fonti
