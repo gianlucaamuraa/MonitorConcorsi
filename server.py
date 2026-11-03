@@ -8,6 +8,8 @@ Serve i file del progetto (web/, data/) e una piccola API:
   POST /api/bandi/<id>         → {"stato": "...", "note": "..."} salva stato e note
   GET  /api/scansione          → stato della scansione in corso
   POST /api/scansione          → avvia una scansione in background
+  POST /api/fonti              → {"url", "ente", "sede"} controlla il link e,
+                                 se funziona, lo aggiunge a fonti.yaml
 
 Ascolta solo su 127.0.0.1: non è raggiungibile da altri computer.
 """
@@ -122,6 +124,15 @@ class Gestore(SimpleHTTPRequestHandler):
         if percorso == "/api/scansione":
             avviata = _avvia_scansione_background()
             return self._json({"avviata": avviata, **_scansione})
+
+        if percorso == "/api/fonti":
+            from core.nuove_fonti import aggiungi_fonte
+            dati = self._leggi_json()
+            testi = [dati.get(k) if isinstance(dati.get(k), str) else ""
+                     for k in ("url", "ente", "sede")]
+            with _lock:   # una modifica di fonti.yaml alla volta
+                esito = aggiungi_fonte(testi[0], testi[1][:120], testi[2][:120])
+            return self._json(esito)
 
         if percorso.startswith("/api/bandi/"):
             from core.db import aggiorna_stato_bando, get_bando

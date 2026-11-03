@@ -25,6 +25,7 @@ uv pip install -r requirements.txt
 | `.venv\Scripts\python main.py schedule` | resta acceso e scansiona ogni giorno all'orario di `config.yaml` |
 | `.venv\Scripts\python main.py report` | rigenera report, calendario e dati senza scansionare |
 | `.venv\Scripts\python main.py fonti` | elenca le fonti configurate |
+| `.venv\Scripts\python main.py aggiungi <link>` | controlla un link e, se funziona, lo aggiunge alle fonti |
 
 In alternativa fai doppio clic su `avvia.bat`: apre l'interfaccia web.
 Dalla pagina il pulsante **Avvia scansione** lancia una scansione.
@@ -47,6 +48,21 @@ Configurate in `fonti.yaml`:
 
 I bandi già salvati che arrivavano solo da fonti tolte da `fonti.yaml` vanno in
 archivio alla scansione successiva.
+
+## Aggiungere una fonte
+
+Pulsante **Aggiungi fonte** nella pagina, oppure `main.py aggiungi <link>`
+(opzioni `--ente`, `--sede`, `--solo-verifica`). Il link viene aggiunto a
+`fonti.yaml` solo se:
+
+1. è un indirizzo `http`/`https` non già presente;
+2. il `robots.txt` del sito ne permette la lettura;
+3. la pagina risponde ed è una pagina web (non un PDF);
+4. il testo parla di concorsi, bandi, selezioni o avvisi.
+
+L'esito dice anche quanti bandi aperti si trovano subito. Online (GitHub Pages)
+il pulsante apre il workflow **Aggiungi fonte** su GitHub: premi "Run workflow",
+incolla il link (già copiato) e leggi l'esito nel riepilogo dell'esecuzione.
 
 ## Bandi scaduti
 

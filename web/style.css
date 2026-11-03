@@ -423,6 +423,9 @@ code {
     border-radius: var(--radius-lg);
 }
 .errore-testo { color: var(--danger); font-size: .875rem; margin-top: .5rem; }
+.ok-testo { color: var(--success); font-size: .875rem; margin-top: .5rem; }
+.esito-fonte ul { margin: .25rem 0 0 1.1rem; padding: 0; font-size: .875rem; }
+.form-accesso input[type="url"] { width: 100%; }
 
 /* ---------------------------------------------------------- footer */
 

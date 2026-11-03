@@ -599,6 +599,79 @@ async function accedi(evento) {
     return false;
 }
 
+/* ---------------------------------------------------------- nuove fonti */
+
+function apriAggiungiFonte() {
+    const online = !STATO.conServer;
+    $("modal-body").innerHTML = `
+        <h2 class="modal-titolo titolo-sfumato">Aggiungi una fonte</h2>
+        <p class="meta">Indica la pagina di un ente con l'elenco dei bandi. Il link viene
+        controllato: deve essere raggiungibile, il sito deve permetterne la lettura
+        automatica e la pagina deve parlare di concorsi. Se va tutto bene entra tra le
+        fonti controllate a ogni scansione.</p>
+        <form class="form-accesso" onsubmit="return inviaFonte(event)">
+            <label for="fonte-url">Link della pagina</label>
+            <input type="url" id="fonte-url" required placeholder="https://www.ente.it/bandi-di-concorso">
+            <label for="fonte-ente">Ente (facoltativo)</label>
+            <input type="text" id="fonte-ente" maxlength="120" placeholder="es. Comune di Alghero">
+            <label for="fonte-sede">Sede (facoltativo)</label>
+            <input type="text" id="fonte-sede" maxlength="120" placeholder="es. Sassari">
+            <div id="fonte-esito" class="esito-fonte" aria-live="polite"></div>
+            <div class="modal-azioni">
+                <button type="submit" id="fonte-invia" class="btn btn-primary">
+                    ${online ? "Continua su GitHub" : "Verifica e aggiungi"}</button>
+            </div>
+        </form>
+        ${online ? `<p class="meta">Online il controllo gira su GitHub: si apre la pagina
+        "Aggiungi fonte", premi "Run workflow" e incolla il link (è già copiato).
+        L'esito compare nel riepilogo dell'esecuzione.</p>` : ""}`;
+    $("modal").classList.remove("hidden");
+    $("fonte-url").focus();
+}
+
+async function inviaFonte(evento) {
+    evento.preventDefault();
+    const url = $("fonte-url").value.trim();
+    const esito = $("fonte-esito");
+
+    if (!STATO.conServer) {
+        if (!CONFIG.githubRepo) {
+            esito.innerHTML = `<p class="errore-testo">Per aggiungere fonti avvia il programma sul PC
+                (python main.py serve) oppure usa python main.py aggiungi &lt;link&gt;.</p>`;
+            return false;
+        }
+        try { await navigator.clipboard.writeText(url); } catch (e) { /* copia non permessa */ }
+        window.open(`https://github.com/${CONFIG.githubRepo}/actions/workflows/aggiungi-fonte.yml`,
+            "_blank", "noopener");
+        esito.innerHTML = `<p class="ok-testo">Pagina GitHub aperta: premi "Run workflow" e incolla il link.</p>`;
+        return false;
+    }
+
+    const btn = $("fonte-invia");
+    btn.disabled = true;
+    btn.textContent = "Controllo in corso…";
+    esito.innerHTML = "";
+    try {
+        const r = await fetch("/api/fonti", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ url, ente: $("fonte-ente").value.trim(), sede: $("fonte-sede").value.trim() }),
+        });
+        const e = await r.json();
+        const esempi = (e.esempi || []).map((t) => `<li>${esc(t)}</li>`).join("");
+        esito.innerHTML = `<p class="${e.ok ? "ok-testo" : "errore-testo"}">${e.ok ? "Fonte aggiunta. " : "Link non aggiunto. "}${esc(e.motivo || e.errore || "")}</p>`
+            + (esempi ? `<ul>${esempi}</ul>` : "")
+            + (e.ok ? `<p class="meta">I suoi bandi compariranno dalla prossima scansione.</p>` : "");
+        if (e.ok) $("fonte-url").value = "";
+    } catch (err) {
+        esito.innerHTML = `<p class="errore-testo">Errore di comunicazione con il server: ${esc(err.message)}</p>`;
+    } finally {
+        btn.disabled = false;
+        btn.textContent = "Verifica e aggiungi";
+    }
+    return false;
+}
+
 /* ---------------------------------------------------------- avvio */
 
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") chiudiModal(); });

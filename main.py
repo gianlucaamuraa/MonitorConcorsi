@@ -9,6 +9,7 @@ Comandi:
   python main.py report               rigenera report, calendario e JSON senza scansionare
   python main.py fonti                elenca le fonti configurate in fonti.yaml
   python main.py sito                 prepara la cartella sito/ da pubblicare online
+  python main.py aggiungi URL         controlla un link e, se funziona, lo aggiunge alle fonti
 """
 
 import argparse
@@ -124,6 +125,24 @@ def cmd_fonti(args):
         print(f"  {f['nome']:<28} {f.get('tipo', 'html'):<9} {stato:<12} {f.get('url', '')}")
 
 
+def cmd_aggiungi(args):
+    from core.nuove_fonti import aggiungi_fonte, verifica_link
+    funzione = verifica_link if args.solo_verifica else aggiungi_fonte
+    e = funzione(args.url, args.ente or "", args.sede or "")
+    print(("OK  " if e["ok"] else "NO  ") + e["motivo"])
+    for t in e["esempi"]:
+        print(f"    - {t}")
+    # Su GitHub l'esito compare nel riepilogo dell'esecuzione
+    riepilogo = os.environ.get("GITHUB_STEP_SUMMARY")
+    if riepilogo:
+        with open(riepilogo, "a", encoding="utf-8") as f:
+            f.write(f"### {'✅ Fonte aggiunta' if e['ok'] else '❌ Link non aggiunto'}\n\n"
+                    f"{args.url}\n\n{e['motivo']}\n\n"
+                    + "".join(f"- {t}\n" for t in e["esempi"]))
+    if not e["ok"]:
+        sys.exit(1)
+
+
 def main():
     parser = argparse.ArgumentParser(description="MonitorConcorsi — concorsi pubblici per il tuo profilo")
     parser.add_argument("-v", "--verboso", action="store_true", help="log dettagliato")
@@ -146,6 +165,13 @@ def main():
     sub.add_parser("report", help="rigenera report/calendario/JSON").set_defaults(func=cmd_report)
     sub.add_parser("fonti", help="elenca le fonti").set_defaults(func=cmd_fonti)
     sub.add_parser("sito", help="prepara la cartella sito/ da pubblicare").set_defaults(func=cmd_sito)
+
+    p = sub.add_parser("aggiungi", help="controlla un link e lo aggiunge alle fonti")
+    p.add_argument("url", help="pagina con l'elenco dei bandi")
+    p.add_argument("--ente", help="nome dell'ente (se manca: titolo della pagina)")
+    p.add_argument("--sede", help="sede di lavoro (default: Sardegna)")
+    p.add_argument("--solo-verifica", action="store_true", help="controlla senza aggiungere")
+    p.set_defaults(func=cmd_aggiungi)
 
     args = parser.parse_args()
     configura_log(args.verboso)
