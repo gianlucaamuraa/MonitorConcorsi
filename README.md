@@ -40,12 +40,13 @@ Configurate in `fonti.yaml`:
 - **InPA** (inpa.gov.it): dal 2023 le PA vi pubblicano tutti i concorsi. Si tengono
   quelli con sede in Sardegna e quelli nazionali (sedi in 5 o più regioni).
 - **Gazzetta Ufficiale, 4ª Serie Speciale Concorsi**: feed RSS dell'ultimo numero.
-- **Siti di enti** (tipo `html` o `rss`): basta indicare l'indirizzo della pagina dei
-  bandi. Sono già attivi, tra gli altri, Comune di Sassari (raccolta concorsi
-  regionali), Città Metropolitana, Uniss, AOU, ATP Sassari, ASPAL, Forestas, ARES,
-  AREUS, Abbanoa e una quarantina di Comuni e Unioni della provincia di Sassari.
-  In fondo a `fonti.yaml` ci sono i siti verificati e scartati, con il motivo
-  (spesso il loro `robots.txt` vieta la lettura automatica).
+- **Siti di enti** (tipo `html`): Città Metropolitana di Sassari, Università di
+  Sassari (personale tecnico-amministrativo), ASPAL (avviamenti art. 16, avvisi e
+  concorsi), ARES Sardegna (gestisce anche i concorsi della ASL di Sassari), AREUS
+  e Abbanoa. Per aggiungerne uno basta indicare l'indirizzo della pagina dei bandi.
+
+I bandi già salvati che arrivavano solo da fonti tolte da `fonti.yaml` vanno in
+archivio alla scansione successiva.
 
 ## Bandi scaduti
 

@@ -5,7 +5,8 @@ core/pipeline.py — Una scansione completa
 2. Scarta i bandi scaduti
 3. Calcola il punteggio e salva (con deduplica tra fonti)
 4. Registra l'esito di ogni fonte nel log
-5. Archivia i bandi scaduti già presenti e ricalcola i punteggi
+5. Archivia i bandi scaduti già presenti e quelli delle fonti tolte,
+   poi ricalcola i punteggi
    (l'urgenza della scadenza cambia ogni giorno)
 6. Genera report HTML, calendario .ics e data/bandi.json
 7. Invia la notifica Telegram con i nuovi bandi (se attiva)
@@ -19,8 +20,8 @@ from urllib.parse import urlparse
 from collectors.registry import crea_collettore, fonti_attive
 from core.config import carica_config, percorso
 from core.dates import is_scaduto
-from core.db import (aggiorna_punteggio, get_bandi, init_db, log_scansione,
-                     scarta_scaduti, upsert_bando)
+from core.db import (aggiorna_punteggio, archivia_fonti_tolte, get_bandi, init_db,
+                     log_scansione, scarta_scaduti, upsert_bando)
 from core.scorer import calcola_punteggio
 
 log = logging.getLogger("pipeline")
@@ -124,6 +125,10 @@ def esegui_scansione(solo: list[str] | None = None, notifica: bool = True) -> di
 
     # Bandi già nel database che nel frattempo sono scaduti
     riepilogo["archiviati"] = scarta_scaduti()
+    # Bandi rilevati solo da fonti tolte da fonti.yaml
+    n_tolti = archivia_fonti_tolte({f.get("nome") for f in fonti_attive()})
+    if n_tolti:
+        log.info(f"{n_tolti} bandi archiviati perché la loro fonte non è più monitorata")
     ricalcola_punteggi(profilo)
 
     genera_export()

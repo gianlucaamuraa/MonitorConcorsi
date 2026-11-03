@@ -257,6 +257,28 @@ def scarta_scaduti(giorni_senza_scadenza: int = 120) -> int:
     return n
 
 
+def archivia_fonti_tolte(fonti_configurate: set[str]) -> int:
+    """
+    Manda in archivio i bandi che arrivavano solo da fonti tolte da fonti.yaml:
+    nessuna scansione li aggiornerebbe più. Stato e note restano nel database.
+    Restituisce quanti bandi sono stati archiviati.
+    """
+    conn = get_connection()
+    with conn:
+        righe = conn.execute("SELECT id, fonti FROM bandi WHERE attivo = 1").fetchall()
+        da_archiviare = [
+            (r["id"],) for r in righe
+            if (f := json.loads(r["fonti"] or "[]")) and not set(f) & fonti_configurate
+        ]
+        conn.executemany("""
+            UPDATE bandi SET attivo = 0, sezione = 'archivio',
+                   motivo_punteggio = 'Fonte non più monitorata'
+            WHERE id = ?
+        """, da_archiviare)
+    conn.close()
+    return len(da_archiviare)
+
+
 def aggiorna_stato_bando(bando_id: str, stato: str, note: str = None):
     """Aggiorna lo stato e le note di un bando (impostate dall'utente)."""
     conn = get_connection()
